@@ -1,0 +1,100 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Main.aux
+Reallocating 'name_of_file' (item size: 1) to 41 items.
+A level-1 auxiliary file: ./01-elementos-pre-textuais/resumoPt.aux
+Reallocating 'name_of_file' (item size: 1) to 45 items.
+A level-1 auxiliary file: ./01-elementos-pre-textuais/listaFiguras.aux
+Reallocating 'name_of_file' (item size: 1) to 45 items.
+A level-1 auxiliary file: ./01-elementos-pre-textuais/listaTabelas.aux
+Reallocating 'name_of_file' (item size: 1) to 48 items.
+A level-1 auxiliary file: ./01-elementos-pre-textuais/listaAlgoritmos.aux
+Reallocating 'name_of_file' (item size: 1) to 40 items.
+A level-1 auxiliary file: ./01-elementos-pre-textuais/sumario.aux
+Reallocating 'name_of_file' (item size: 1) to 44 items.
+A level-1 auxiliary file: ./02-elementos-textuais/cap1-introducao.aux
+Reallocating 'name_of_file' (item size: 1) to 43 items.
+A level-1 auxiliary file: ./02-elementos-textuais/cap0-objetivos.aux
+Reallocating 'name_of_file' (item size: 1) to 47 items.
+A level-1 auxiliary file: ./02-elementos-textuais/cap2-marco_teorico.aux
+Reallocating 'name_of_file' (item size: 1) to 52 items.
+A level-1 auxiliary file: ./02-elementos-textuais/cap3-marco_metodologico.aux
+Reallocating 'name_of_file' (item size: 1) to 51 items.
+A level-1 auxiliary file: ./02-elementos-textuais/cap4-trabajo_realizado.aux
+Reallocating 'name_of_file' (item size: 1) to 44 items.
+A level-1 auxiliary file: ./02-elementos-textuais/cap5-resultados.aux
+Reallocating 'name_of_file' (item size: 1) to 44 items.
+A level-1 auxiliary file: ./02-elementos-textuais/cap6-conclusion.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+Reallocating 'name_of_file' (item size: 1) to 38 items.
+Reallocating 'name_of_file' (item size: 1) to 42 items.
+A level-1 auxiliary file: ./03-elementos-pos-textuais/glossario.aux
+Reallocating 'name_of_file' (item size: 1) to 42 items.
+A level-1 auxiliary file: ./03-elementos-pos-textuais/apendices.aux
+Reallocating 'name_of_file' (item size: 1) to 39 items.
+A level-1 auxiliary file: ./03-elementos-pos-textuais/anexos.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+The style file: abntex2-alf.bst
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Database file #1: abntex2-options.bib
+Database file #2: 03-elementos-pos-textuais/refbase.bib
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Warning--campo year vazio ou faltando em WinstarLCD
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+You've used 12 entries,
+            6714 wiz_defined-function locations,
+            1248 strings with 11117 characters,
+and the built_in function-call counts, 9999 in all, are:
+= -- 1314
+> -- 4
+< -- 283
++ -- 332
+- -- 3
+* -- 483
+:= -- 1080
+add.period$ -- 20
+call.type$ -- 16
+change.case$ -- 48
+chr.to.int$ -- 20
+cite$ -- 5
+duplicate$ -- 985
+empty$ -- 639
+format.name$ -- 0
+if$ -- 2183
+int.to.chr$ -- 7
+int.to.str$ -- 3
+missing$ -- 143
+newline$ -- 28
+num.names$ -- 0
+pop$ -- 116
+preamble$ -- 1
+purify$ -- 36
+quote$ -- 0
+skip$ -- 1413
+stack$ -- 1
+substring$ -- 430
+swap$ -- 321
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 9
+width$ -- 0
+write$ -- 71
+(There was 1 warning)

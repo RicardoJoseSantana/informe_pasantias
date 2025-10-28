@@ -1,0 +1,41 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Espressif Systems (Shanghai) Co., Ltd. 2025]{esp32wroom32}
+\abntrefinfo{Espressif Systems (Shanghai) Co., Ltd.}{ESPRESSIF SYSTEMS
+  (SHANGHAI) CO., LTD.}{2025}
+{ESPRESSIF SYSTEMS (SHANGHAI) CO., LTD. \textbf{ESP32-WROOM-32 Datasheet
+  Version 3.6}.
+Shanghai, China, 2025. Documento de especificaciones técnicas (Datasheet).
+  Dispon{\'\i}vel em:
+  \url{https://espressif.com/documentation/esp32-wroom-32\_datasheet\_en.pdf}.}
+
+\bibitem[OMRON Corporation, Industrial Automation Company 1992]{omron}
+\abntrefinfo{OMRON Corporation, Industrial Automation Company}{OMRON
+  CORPORATION, INDUSTRIAL AUTOMATION COMPANY}{1992}
+{OMRON CORPORATION, INDUSTRIAL AUTOMATION COMPANY. \textbf{Rotary Encoder E6B2:
+  New General-purpose Incremental Rotary Encoder}.
+Osaka, Japan, 1992. Documento de Especificaciones Técnicas. Cat. No.
+  Q085-E1-1C. Código de impresión (1092). Dispon{\'\i}vel em:
+  \url{https://docs.rs-online.com/35ca/0900766b80383981.pdf}.}
+
+\bibitem[STEPPERONLINE 2020]{steeperonline}
+\abntrefinfo{STEPPERONLINE}{STEPPERONLINE}{2020}
+{STEPPERONLINE. \textbf{User Manual DM542T(V4.0) 2-Phase Digital Stepper
+  Drive}.
+Revision 4.0. [S.l.], 2020. Dispon{\'\i}vel em:
+  \url{https://www.omc-stepperonline.com/download/DM542T\_V4.0.pdf}.}
+
+\bibitem[Winstar Display Co.]{WinstarLCD}
+\abntrefinfo{Winstar Display Co.}{WINSTAR DISPLAY CO.}{}
+{WINSTAR DISPLAY CO. \textbf{SPECIFICATION MODULE NO.: WH1602B General
+  Specification}.
+Taiwan (Ubicación de la compañía). Módulo LCD de 16 caracteres x 2 líneas
+  con IC ST7066U e interfaz de la serie 68. Dispon{\'\i}vel em:
+  \url{https://www.winstar.com.tw/products/lcd-display/character-lcd-display-module/lcd-display-16x2.html}.}
+
+\end{thebibliography}

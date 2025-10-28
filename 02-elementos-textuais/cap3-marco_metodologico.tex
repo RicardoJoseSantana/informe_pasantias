@@ -1,0 +1,31 @@
+\chapter{Marco Metodológico}\label{metodologia}
+
+A continuación, se detalla la metodología de trabajo seguida para el desarrollo del proyecto, estructurada en fases semanales según el cronograma establecido. Cada fase se enfocó en el cumplimiento de objetivos específicos para asegurar una construcción modular y robusta del sistema de control.
+
+\begin{enumerate}[label=\textbf{Semana \arabic*:}, leftmargin=*]
+
+    \item \textbf{Revisión bibliográfica y configuración del entorno (25/08 al 29/08):}
+    Se realizó una investigación inicial sobre los principios de control para un péndulo invertido y se estudiaron las hojas de datos de los componentes clave: el microcontrolador ESP32, el driver de motor de paso DM542T y el encoder incremental. Se configuró el entorno de desarrollo Visual Studio Code con la extensión PlatformIO y el framework ESP-IDF, realizando pruebas de compilación y carga de código para verificar la comunicación con la placa.
+
+    \item \textbf{Control básico de periféricos y calibración (01/09 al 05/09):}
+    Se desarrollaron módulos de software independientes (librerías) para el control de bajo nivel. Se implementó una librería para el motor de paso capaz de generar trenes de pulsos a una frecuencia variable. Paralelamente, se creó una librería para el encoder incremental, utilizando el periférico de hardware PCNT del ESP32 en modo cuadratura para una lectura precisa del ángulo. Se finalizó con una rutina de calibración para encontrar los límites físicos del riel.
+
+    \item \textbf{Implementación de la lógica de control (08/09 al 12/09):}
+    Se diseñó la arquitectura del sistema de control principal. Se implementó inicialmente un controlador PID, estableciendo una tarea de alta prioridad en FreeRTOS para el bucle de control. Se realizaron pruebas en lazo abierto (comandos manuales) para verificar la respuesta del actuador y, posteriormente, se cerró el lazo utilizando la realimentación del encoder. Se inició el proceso de sintonización empírica de las ganancias del controlador.
+
+    \item \textbf{Diseño de la interfaz de visualización (15/09 al 19/09):}
+    Se integró el hardware de la pantalla LCD mediante su módulo adaptador I2C. Se desarrolló un módulo de software 'lcd\_controller' para abstraer las operaciones de bajo nivel. Se diseñó una interfaz de usuario con múltiples vistas, gestionada por una tarea de baja prioridad, para mostrar en tiempo real el estado del sistema, el ángulo del péndulo, y las constantes del controlador, facilitando el diagnóstico y la sintonización.
+
+    \item \textbf{Integración del sistema (22/09 al 26/09):}
+    Se unificaron todos los módulos desarrollados (controlador, motor, encoder, LCD, botones de interfaz) en una única aplicación concurrente. Se ajustaron las prioridades de las tareas para garantizar que el bucle de control en tiempo real no fuera afectado por las tareas de menor prioridad, como la actualización de la pantalla o la lectura de comandos UART.
+
+    \item \textbf{Optimización y pruebas de robustez (29/09 al 03/10):}
+    Se realizó un proceso iterativo de sintonización fina de las ganancias del controlador para mejorar la estabilidad y la respuesta ante perturbaciones. Se implementaron optimizaciones en el código, como la migración del generador de pulsos al periférico MCPWM, y se realizaron pruebas de robustez para verificar el comportamiento del sistema en los límites de operación y la fiabilidad de los mecanismos de seguridad.
+
+    \item \textbf{Documentación del código (06/10 al 10/10):}
+    Se llevó a cabo una revisión completa del código fuente para añadir comentarios explicativos en formato estándar. Se documentó la arquitectura general del software, el propósito de cada módulo (librería), la función de cada tarea de FreeRTOS y la interfaz pública de las funciones más importantes para facilitar su comprensión y futuro mantenimiento.
+
+    \item \textbf{Resultados y entrega final (13/10 al 17/10):}
+    Se recopilaron los datos de rendimiento obtenidos durante las pruebas de robustez y se generaron gráficas para visualizar el comportamiento del sistema. Se preparó el material audiovisual para la presentación de resultados y se redactó el informe técnico final del proyecto, detallando el diseño, la implementación, las pruebas realizadas y las conclusiones.
+
+\end{enumerate}

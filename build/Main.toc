@@ -1,0 +1,33 @@
+\changetocdepth {4}
+\babel@toc {brazil}{}\relax 
+\contentsline {chapter}{Índice General}{vii}{chapter*.7}%
+\contentsline {chapter}{\chapternumberline {1}Introducción}{1}{chapter.1}%
+\contentsline {chapter}{\chapternumberline {2}Objetivos}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Objetivo General.}{2}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Objetivos Específicos.}{2}{section.2.2}%
+\contentsline {chapter}{\chapternumberline {3}Marco Teórico}{3}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Motor de paso}{3}{section.3.1}%
+\contentsline {chapter}{\chapternumberline {4}Marco Metodológico}{4}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {5}Trabajo Realizado}{6}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Componentes}{6}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Motor de paso 23HS22-2804S STEPPERONLINE}{6}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Digital Stepper Drive DM542T.}{6}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}ROTATORY ENCODER (INCREMENTAL) E6B2-CWZ6C OMRON Corporation.}{7}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}ESP32-WROOM-32}{9}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}Pantalla LCD WH1602B 16 carácteres x 2 líneas.}{10}{subsection.5.1.5}%
+\contentsline {subsection}{\numberline {5.1.6}Adaptador I2C para pantalla LCD.}{11}{subsection.5.1.6}%
+\contentsline {subsection}{\numberline {5.1.7}Convertidor DC DC Arduino basado en LM2596.}{11}{subsection.5.1.7}%
+\contentsline {section}{\numberline {5.2}Implementación de Encoder}{12}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Diagrama de Conexiones.}{12}{section.5.3}%
+\contentsline {chapter}{\chapternumberline {6}Resultados}{14}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {7}Conclusión}{15}{chapter.7}%
+\vspace {\cftbeforepartskip }
+\contentsline {chapter}{Referencias}{16}{chapter*.20}%
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\contentsline {part}{Ap\^endices}{17}{section*.21}%
+\contentsline {appendix}{\chapternumberline {A}Nome do apêndice}{18}{appendix.A}%
+\cftinsert {AAA}
+\renewcommand *{\cftappendixname }{ANEXO \space }
+\contentsline {part}{Anexos}{19}{section*.22}%
+\contentsline {appendix}{\chapternumberline {A}Información sobre Motor de paso 23HS22-2804S}{20}{appendix.anexochapback.1}%
+\contentsline {appendix}{\chapternumberline {B}Información sobre el ESP32-WROOM-32}{21}{appendix.anexochapback.2}%
