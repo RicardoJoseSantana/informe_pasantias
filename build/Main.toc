@@ -17,17 +17,22 @@
 \contentsline {subsection}{\numberline {5.1.5}Pantalla LCD WH1602B 16 carácteres x 2 líneas.}{10}{subsection.5.1.5}%
 \contentsline {subsection}{\numberline {5.1.6}Adaptador I2C para pantalla LCD.}{11}{subsection.5.1.6}%
 \contentsline {subsection}{\numberline {5.1.7}Convertidor DC DC Arduino basado en LM2596.}{11}{subsection.5.1.7}%
-\contentsline {section}{\numberline {5.2}Implementación de Encoder}{12}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Diagrama de Conexiones.}{12}{section.5.3}%
-\contentsline {chapter}{\chapternumberline {6}Resultados}{14}{chapter.6}%
-\contentsline {chapter}{\chapternumberline {7}Conclusión}{15}{chapter.7}%
+\contentsline {section}{\numberline {5.2}Implementación de Encoder}{11}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Caracterización y conexión del encoder}{11}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Montaje y señal observada}{12}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Integración con ESP32: lectura y salida de datos}{13}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Diagrama de Conexiones.}{15}{section.5.3}%
+\contentsline {chapter}{\chapternumberline {6}Resultados}{17}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Encoder}{17}{section.6.1}%
+\contentsline {chapter}{\chapternumberline {7}Conclusión}{19}{chapter.7}%
 \vspace {\cftbeforepartskip }
-\contentsline {chapter}{Referencias}{16}{chapter*.20}%
+\contentsline {chapter}{Referencias}{20}{chapter*.27}%
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
-\contentsline {part}{Ap\^endices}{17}{section*.21}%
-\contentsline {appendix}{\chapternumberline {A}Nome do apêndice}{18}{appendix.A}%
+\contentsline {part}{Ap\^endices}{21}{section*.28}%
+\contentsline {appendix}{\chapternumberline {A}Códigos}{22}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Códigos libreria encoder}{22}{section.A.1}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
-\contentsline {part}{Anexos}{19}{section*.22}%
-\contentsline {appendix}{\chapternumberline {A}Información sobre Motor de paso 23HS22-2804S}{20}{appendix.anexochapback.1}%
-\contentsline {appendix}{\chapternumberline {B}Información sobre el ESP32-WROOM-32}{21}{appendix.anexochapback.2}%
+\contentsline {part}{Anexos}{27}{section*.29}%
+\contentsline {appendix}{\chapternumberline {A}Información sobre Motor de paso 23HS22-2804S}{28}{appendix.anexochapback.1}%
+\contentsline {appendix}{\chapternumberline {B}Información sobre el ESP32-WROOM-32}{29}{appendix.anexochapback.2}%

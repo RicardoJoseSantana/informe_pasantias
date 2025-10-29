@@ -163,6 +163,70 @@
     
 \section{Implementación de Encoder}
 
+    \subsection{Caracterización y conexión del encoder}
+    \label{sec:encoder-caracterizacion}
+
+        Se han preparado dos figuras basadas en la hoja de datos \cite{omron}: una que muestra el diagrama interno de salida/conexión a colector abierto (figura \ref{fig:encoder-out-interno}) y otra que muestra la señal esperada (figura \ref{fig:encoder-out-senal})entre las fases A, B y Z.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[height=4cm]{04-figuras/encoder-out-interno.png}
+            \caption{Circuito de salida del encoder (basado en hoja de datos E6B2-CWZ6C). Los pines: marrón = Vcc (5–24 V), azul = GND, negro = fase A, blanco = fase B, naranja = fase Z.}
+            \label{fig:encoder-out-interno}
+        \end{figure}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[height=4cm]{04-figuras/encoder-out-senal.png}
+            \caption{Señales esperadas en las fases A, B y Z (timing y desfase) por salida de colector abierto.}
+            \label{fig:encoder-out-senal}
+        \end{figure}
+
+        Las fases A y B entregan pulsos en cuadratura con un desfase de 90° (±45°). La fase Z produce un pulso por revolución que permite el establecimiento de la referencia absoluta de giro. El modelo E6B2-CWZ6C admite salidas de colector abierto con máximo de 35 mA y tensión hasta 30 VDC (ver figura \ref{fig:encoder-out-interno}).
+
+    \subsection{Montaje y señal observada}
+    \label{sec:encoder-montaje}
+
+        Para validar el funcionamiento del encoder se realizó un montaje de prueba sencillo: alimentación estable (5 VDC), que puede tomarse directo del pin 5V del esp32 o de una fuente externa; las salidas A/B/Z conectadas a entradas de captura mediante resistencias pull-up (cuando es necesario) y la rotación manual del eje.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[height=4cm]{04-figuras/encoder-prueba.jpg}
+            \caption{Montaje de prueba del encoder: conexiones a la fuente de 5 V y sondas de osciloscopio en A y B.}
+            \label{fig:encoder-prueba}
+        \end{figure}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[height=4cm]{04-figuras/encoder-senal.jpg}
+            \caption{Señal observada en prueba: canales A y B en cuadratura.}
+            \label{fig:encoder-prueba-senal}
+        \end{figure}
+
+        La señal de salida presenta niveles TTL compatibles con entradas de microcontrolador cuando se alimenta a 5V. A velocidades bajas la forma de onda es estable y limpia; a mayor velocidad se observan pequeñas transitorias despreciables.
+
+    \subsection{Integración con ESP32: lectura y salida de datos}
+    \label{sec:encoder-esp32}
+
+        En la fase de integración se conectó el encoder a entradas GPIO del ESP32, basándose en el diagrama de conexiones de la figura \ref{fig:conexiones-encoder}. Se implementó un programa de lectura en el ESP32 que cuenta pulsos, determina dirección y reporta la posición por puerto serie; indicado en la sección \ref{sec:res-encoder}.
+
+        La figura \ref{fig:encoder-esp32-montaje} muestra el montaje físico del encoder conectado al ESP32. La figura \ref{fig:encoder-esp32-salida} muestra una captura de la salida serial (ejemplo) que también es de terminal, generada por el firmware de lectura.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[height=4cm]{04-figuras/encoder-esp.jpg}
+            \caption{Montaje físico del encoder conectado al ESP32 durante las pruebas de integración.}
+            \label{fig:encoder-esp}
+        \end{figure}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[height=4cm]{04-figuras/encoder-code.jpg}
+            \caption{Captura de la salida serial o terminal del ESP32 mostrando conteo de pulsos, dirección y detección de Z.}
+            \label{fig:encoder-codeserial}
+        \end{figure}
+
+        \textbf{Observación:} Para la prueba realizada se utilizó una resistencia de pull-up para la fase A y B, sin embargo Z no la incorporó para probar la activación de pull-up interno del esp32 por software, es decir, estas resistencias no son necesarias, siempre y cuando se active el pull-up interno del esp32; aunque es necesario incorporarlas para evitar activaciones por ruidos externos, según la aplicación.
 
 
 \section{Diagrama de Conexiones.}

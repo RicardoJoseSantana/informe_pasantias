@@ -31,20 +31,39 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.5}Pantalla LCD WH1602B 16 carácteres x 2 líneas.}{10}{subsection.5.1.5}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Pantalla LCD.}}{10}{figure.caption.13}\protected@file@percent }
 \newlabel{fig:pantalla-lcd}{{5}{10}{Pantalla LCD}{figure.caption.13}{}}
+\citation{omron}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.6}Adaptador I2C para pantalla LCD.}{11}{subsection.5.1.6}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Adaptador I2C.}}{11}{figure.caption.14}\protected@file@percent }
 \newlabel{fig:adaptador-i2c}{{6}{11}{Adaptador I2C}{figure.caption.14}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.7}Convertidor DC DC Arduino basado en LM2596.}{11}{subsection.5.1.7}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces convertidor LM2596.}}{11}{figure.caption.15}\protected@file@percent }
 \newlabel{fig:convertidor-dcdc}{{7}{11}{convertidor LM2596}{figure.caption.15}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Implementación de Encoder}{12}{section.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Diagrama de Conexiones.}{12}{section.5.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Diagrama de conexiones para utilizar motor.}}{12}{figure.caption.16}\protected@file@percent }
-\newlabel{fig:diagrama-motor}{{8}{12}{Diagrama de conexiones para utilizar motor}{figure.caption.16}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Diagrama de conexiones de sistema.}}{13}{figure.caption.17}\protected@file@percent }
-\newlabel{fig:diagrama-completo}{{9}{13}{Diagrama de conexiones de sistema}{figure.caption.17}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Implementación de Encoder}{11}{section.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Caracterización y conexión del encoder}{11}{subsection.5.2.1}\protected@file@percent }
+\newlabel{sec:encoder-caracterizacion}{{5.2.1}{11}{Caracterización y conexión del encoder}{subsection.5.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Circuito de salida del encoder (basado en hoja de datos E6B2-CWZ6C). Los pines: marrón = Vcc (5–24 V), azul = GND, negro = fase A, blanco = fase B, naranja = fase Z.}}{12}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:encoder-out-interno}{{8}{12}{Circuito de salida del encoder (basado en hoja de datos E6B2-CWZ6C). Los pines: marrón = Vcc (5–24 V), azul = GND, negro = fase A, blanco = fase B, naranja = fase Z}{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Señales esperadas en las fases A, B y Z (timing y desfase) por salida de colector abierto.}}{12}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:encoder-out-senal}{{9}{12}{Señales esperadas en las fases A, B y Z (timing y desfase) por salida de colector abierto}{figure.caption.17}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Montaje y señal observada}{12}{subsection.5.2.2}\protected@file@percent }
+\newlabel{sec:encoder-montaje}{{5.2.2}{12}{Montaje y señal observada}{subsection.5.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Montaje de prueba del encoder: conexiones a la fuente de 5 V y sondas de osciloscopio en A y B.}}{13}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:encoder-prueba}{{10}{13}{Montaje de prueba del encoder: conexiones a la fuente de 5 V y sondas de osciloscopio en A y B}{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Señal observada en prueba: canales A y B en cuadratura.}}{13}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:encoder-prueba-senal}{{11}{13}{Señal observada en prueba: canales A y B en cuadratura}{figure.caption.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Integración con ESP32: lectura y salida de datos}{13}{subsection.5.2.3}\protected@file@percent }
+\newlabel{sec:encoder-esp32}{{5.2.3}{13}{Integración con ESP32: lectura y salida de datos}{subsection.5.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Montaje físico del encoder conectado al ESP32 durante las pruebas de integración.}}{14}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:encoder-esp}{{12}{14}{Montaje físico del encoder conectado al ESP32 durante las pruebas de integración}{figure.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Captura de la salida serial o terminal del ESP32 mostrando conteo de pulsos, dirección y detección de Z.}}{14}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:encoder-codeserial}{{13}{14}{Captura de la salida serial o terminal del ESP32 mostrando conteo de pulsos, dirección y detección de Z}{figure.caption.21}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Diagrama de Conexiones.}{15}{section.5.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Diagrama de conexiones para utilizar motor.}}{15}{figure.caption.22}\protected@file@percent }
+\newlabel{fig:diagrama-motor}{{14}{15}{Diagrama de conexiones para utilizar motor}{figure.caption.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Diagrama de conexiones de sistema.}}{16}{figure.caption.23}\protected@file@percent }
+\newlabel{fig:diagrama-completo}{{15}{16}{Diagrama de conexiones de sistema}{figure.caption.23}{}}
 \@setckpt{./02-elementos-textuais/cap4-trabajo_realizado}{
-\setcounter{page}{14}
+\setcounter{page}{17}
 \setcounter{equation}{0}
 \setcounter{enumi}{8}
 \setcounter{enumii}{0}
@@ -92,10 +111,10 @@
 \setcounter{cmsm@mctr}{0}
 \setcounter{bsm@mctr}{0}
 \setcounter{workm@mctr}{0}
-\setcounter{sheetsequence}{22}
-\setcounter{lastsheet}{29}
-\setcounter{lastpage}{21}
-\setcounter{figure}{9}
+\setcounter{sheetsequence}{25}
+\setcounter{lastsheet}{37}
+\setcounter{lastpage}{29}
+\setcounter{figure}{15}
 \setcounter{lofdepth}{1}
 \setcounter{table}{1}
 \setcounter{lotdepth}{1}
