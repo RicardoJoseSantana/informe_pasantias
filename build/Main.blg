@@ -7,8 +7,6 @@ Reallocating 'name_of_file' (item size: 1) to 45 items.
 A level-1 auxiliary file: ./01-elementos-pre-textuais/listaFiguras.aux
 Reallocating 'name_of_file' (item size: 1) to 45 items.
 A level-1 auxiliary file: ./01-elementos-pre-textuais/listaTabelas.aux
-Reallocating 'name_of_file' (item size: 1) to 48 items.
-A level-1 auxiliary file: ./01-elementos-pre-textuais/listaAlgoritmos.aux
 Reallocating 'name_of_file' (item size: 1) to 40 items.
 A level-1 auxiliary file: ./01-elementos-pre-textuais/sumario.aux
 Reallocating 'name_of_file' (item size: 1) to 44 items.
@@ -46,55 +44,58 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Database file #1: abntex2-options.bib
 Database file #2: 03-elementos-pos-textuais/refbase.bib
+Warning--entry type for "LeiliMotor" isn't style-file defined
+--line 48 of file 03-elementos-pos-textuais/refbase.bib
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
 Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Warning--campo year vazio ou faltando em WestEncoder
 Warning--campo year vazio ou faltando em WinstarLCD
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 12 entries,
+You've used 14 entries,
             6714 wiz_defined-function locations,
-            1248 strings with 11117 characters,
-and the built_in function-call counts, 9999 in all, are:
-= -- 1314
+            1259 strings with 11570 characters,
+and the built_in function-call counts, 11343 in all, are:
+= -- 1464
 > -- 4
-< -- 283
-+ -- 332
+< -- 305
++ -- 354
 - -- 3
-* -- 483
-:= -- 1080
-add.period$ -- 20
-call.type$ -- 16
-change.case$ -- 48
-chr.to.int$ -- 20
-cite$ -- 5
-duplicate$ -- 985
-empty$ -- 639
+* -- 550
+:= -- 1211
+add.period$ -- 28
+call.type$ -- 18
+change.case$ -- 59
+chr.to.int$ -- 22
+cite$ -- 8
+duplicate$ -- 1108
+empty$ -- 762
 format.name$ -- 0
-if$ -- 2183
+if$ -- 2522
 int.to.chr$ -- 7
 int.to.str$ -- 3
-missing$ -- 143
-newline$ -- 28
+missing$ -- 174
+newline$ -- 38
 num.names$ -- 0
-pop$ -- 116
+pop$ -- 158
 preamble$ -- 1
-purify$ -- 36
+purify$ -- 42
 quote$ -- 0
-skip$ -- 1413
+skip$ -- 1540
 stack$ -- 1
-substring$ -- 430
-swap$ -- 321
-text.length$ -- 4
+substring$ -- 481
+swap$ -- 362
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 9
+warning$ -- 2
+while$ -- 11
 width$ -- 0
-write$ -- 71
-(There was 1 warning)
+write$ -- 100
+(There were 3 warnings)

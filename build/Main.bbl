@@ -14,6 +14,14 @@ Shanghai, China, 2025. Documento de especificaciones técnicas (Datasheet).
   Dispon{\'\i}vel em:
   \url{https://espressif.com/documentation/esp32-wroom-32\_datasheet\_en.pdf}.}
 
+\bibitem[Leili Motor 2022]{LeiliMotor}
+\abntrefinfo{Leili Motor}{LEILI MOTOR}{2022}
+{LEILI MOTOR. \textbf{Motores paso a paso unipolares vs bipolares: ¿cuál es
+  más eficiente?} No. 19 Qianjiatang Road, Wujin District, Changzhou City,
+  Jiangsu Province, 2022.
+Artículo de comparación técnica. Copyright 2022: Todos los derechos
+  reservados.}
+
 \bibitem[OMRON Corporation, Industrial Automation Company 1992]{omron}
 \abntrefinfo{OMRON Corporation, Industrial Automation Company}{OMRON
   CORPORATION, INDUSTRIAL AUTOMATION COMPANY}{1992}
@@ -29,6 +37,14 @@ Osaka, Japan, 1992. Documento de Especificaciones Técnicas. Cat. No.
   Drive}.
 Revision 4.0. [S.l.], 2020. Dispon{\'\i}vel em:
   \url{https://www.omc-stepperonline.com/download/DM542T\_V4.0.pdf}.}
+
+\bibitem[West Instruments de México, S.A.]{WestEncoder}
+\abntrefinfo{West Instruments de México, S.A.}{WEST INSTRUMENTS DE MéXICO,
+  S.A.}{}
+{WEST INSTRUMENTS DE MéXICO, S.A. \textbf{MANUAL DE APLICACIÓN DE ENCODERS:
+  Una guía de referencia y tutoría sobre encoders para control de movimiento:
+  Tipos, tecnologías, aplicaciones, e instalaciones}.
+[S.l.]. Dispon{\'\i}vel em: \url{www.westmexico.com.mx}.}
 
 \bibitem[Winstar Display Co.]{WinstarLCD}
 \abntrefinfo{Winstar Display Co.}{WINSTAR DISPLAY CO.}{}
