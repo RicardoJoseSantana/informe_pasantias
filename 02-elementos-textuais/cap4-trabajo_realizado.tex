@@ -210,7 +210,7 @@
 
         En la fase de integración se conectó el encoder a entradas GPIO del ESP32, basándose en el diagrama de conexiones de la figura \ref{fig:conexiones-encoder}. Se implementó un programa de lectura en el ESP32 que cuenta pulsos, determina dirección y reporta la posición por puerto serie; indicado en la sección \ref{sec:res-encoder}.
 
-        La figura \ref{fig:encoder-esp32-montaje} muestra el montaje físico del encoder conectado al ESP32. La figura \ref{fig:encoder-esp32-salida} muestra una captura de la salida serial (ejemplo) que también es de terminal, generada por el firmware de lectura.
+        La figura \ref{fig:encoder-esp} muestra el montaje físico del encoder conectado al ESP32. La figura \ref{fig:encoder-codeserial} muestra una captura de la salida serial (ejemplo) que también es de terminal, generada por el firmware de lectura.
 
         \begin{figure}[H]
             \centering
@@ -228,6 +228,75 @@
 
         \textbf{Observación:} Para la prueba realizada se utilizó una resistencia de pull-up para la fase A y B, sin embargo Z no la incorporó para probar la activación de pull-up interno del esp32 por software, es decir, estas resistencias no son necesarias, siempre y cuando se active el pull-up interno del esp32; aunque es necesario incorporarlas para evitar activaciones por ruidos externos, según la aplicación.
 
+
+\section{Implementación del driver y motor}
+\label{sec:driver-motor}
+
+    En esta sección se documenta la integración del controlador de motor paso a paso DM542T con el motor 23HS22-2804S y su control desde el ESP32. El montaje se realizó siguiendo el diagrama de conexiones (ver figura \ref{fig:conexiones-motor} en los resultados) donde se muestran las señales PUL (pulsos), DIR (dirección) y ENA (habilitación).
+
+    \subsection{Conexiones y consideraciones de señal}
+
+    El DM542T acepta entradas ópticamente aisladas para PUL, DIR y ENA; puede funcionar con niveles lógicos compatibles con 5 V cuando el aislamiento está configurado apropiadamente. En la integración con el ESP32 se utilizó la siguiente convención (ejemplo):
+
+    \begin{itemize}
+        \item PUL: recibe el tren de pulsos que hace avanzar el motor.
+        \item DIR: selecciona el sentido de giro (hora/anti-hora).
+        \item ENA: señal opcional para habilitar o deshabilitar el driver.
+    \end{itemize}
+
+    En el diagrama de conexiones usado (\ref{fig:montaje-conexiones-motor}) se observa la ruta desde el ESP32 a las entradas del DM542T. Es importante respetar la polaridad y los jumpers de configuración del driver (niveles y pull-ups) y emplear una masa común cuando no se usa el aislamiento óptico.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\textwidth]{04-figuras/motor-esp.jpg}
+        \caption{Diagrama de conexiones driver y motor, en conjunto con el ESP32.}
+        \label{fig:montaje-conexiones-motor}
+    \end{figure}
+
+    \subsection{Cálculo de pulsos por revolución y configuración de microstepping}
+
+    Para controlar exactamente una vuelta del eje se debe enviar al pin PUL un número de pulsos igual al número de pasos por revolución del motor multiplicado por el factor de microstepping configurado en el DM542T.
+
+    Fórmula general:
+
+
+    \subsection{Frecuencia de pulsos: mínimos y máximos}
+
+    El DM542T soporta una frecuencia de pulsos de hasta 200 kHz (según la hoja de datos) y para una operación confiable en este montaje se utilizó como frecuencia mínima práctica 10 kHz. Con estos límites, el tiempo requerido para una revolución completa queda:
+
+    - A 10 kHz: tiempo = Pulsesperrev / 10000 = 3200 / 10,000 = 0.32 s $\rightarrow$ RPM $\approx$ 187.5 rpm.
+    - A 200 kHz: tiempo = 3200 / 200000 = 0.016 s $\rightarrow$ RPM $\approx$ 3750 rpm.
+
+    Estos valores son orientativos: la velocidad segura depende de la carga, el par requerido y las limitaciones térmicas del motor y driver. Ajuste la corriente del DM542T con los dip switches al valor nominal del motor y emplee microstepping según la necesidad de resolución/torque.
+
+    \subsection{Generación de pulsos desde el ESP32}
+
+    Para frecuencias altas (>> 10 kHz) es recomendable usar periféricos de hardware del ESP32 para generar el tren de pulsos:
+
+    - RMT (Remote Control) o PWM/hardware timer para generar pulsos en hardware, evitando la pérdida de pulsos por bloqueo en el scheduler.
+    - Evitar usar delays software largos o loops con digitalWrite a altas frecuencias (riesgo de jitter y pérdida).
+
+    En el control de una vuelta el algoritmo básico es:
+
+    1. Configurar GPIO DIR al nivel deseado.
+    2. Habilitar ENA (si se usa).
+    3. Generar N = Pulsesperrev pulsos en PUL con la frecuencia deseada.
+    4. Deshabilitar ENA (opcional).
+
+    \subsection{Prueba de una vuelta — procedimiento y observaciones}
+
+    Procedimiento realizado:
+
+    1. Configurar el DM542T a 1/16 microstepping y corriente adecuada para el motor.
+    2. Conectar PUL a un pin del ESP32 capaz de salida PWM/RMT y DIR a un GPIO digital.
+    3. Generar 3200 pulsos a 10 kHz y verificar que el eje completa una revolución.
+    4. Repetir a 50 kHz y observar comportamiento; finalmente probar en el rango hasta 200 kHz para verificar respuesta.
+
+    Observaciones recomendadas:
+
+    - Verificar que la corriente de ajuste del driver sea la adecuada (evitar sobrecalentamiento).
+    - Observar vibraciones a microsteppings bajos y calor del motor a altas frecuencias.
+    - Si se experimenta pérdida de pasos, reducir la velocidad, aumentar corriente o mejorar la aceleración (rampado) de la secuencia de pulsos.
 
 \section{Diagrama de Conexiones.}
 

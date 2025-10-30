@@ -1,18 +1,20 @@
 \babel@toc {brazil}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Motor de paso}}{6}{figure.caption.8}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Controlador digital de motor de paso}}{6}{figure.caption.9}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Encoder rotativo}}{7}{figure.caption.10}%
-\contentsline {figure}{\numberline {4}{\ignorespaces ESP32-WROOM-32}}{9}{figure.caption.12}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Pantalla LCD.}}{10}{figure.caption.13}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Adaptador I2C.}}{11}{figure.caption.14}%
-\contentsline {figure}{\numberline {7}{\ignorespaces convertidor LM2596.}}{11}{figure.caption.15}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Circuito de salida del encoder (basado en hoja de datos E6B2-CWZ6C). Los pines: marrón = Vcc (5–24 V), azul = GND, negro = fase A, blanco = fase B, naranja = fase Z.}}{12}{figure.caption.16}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Señales esperadas en las fases A, B y Z (timing y desfase) por salida de colector abierto.}}{12}{figure.caption.17}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Montaje de prueba del encoder: conexiones a la fuente de 5 V y sondas de osciloscopio en A y B.}}{13}{figure.caption.18}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Señal observada en prueba: canales A y B en cuadratura.}}{13}{figure.caption.19}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Montaje físico del encoder conectado al ESP32 durante las pruebas de integración.}}{14}{figure.caption.20}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Captura de la salida serial o terminal del ESP32 mostrando conteo de pulsos, dirección y detección de Z.}}{14}{figure.caption.21}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Diagrama de conexiones para utilizar motor.}}{15}{figure.caption.22}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Diagrama de conexiones de sistema.}}{16}{figure.caption.23}%
-\contentsline {figure}{\numberline {16}{\ignorespaces DIagrama de conexiones de integración encoder y esp32.}}{17}{figure.caption.24}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Pinout esp32-wroom-32.}}{29}{figure.caption.32}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Motor de paso}}{8}{figure.caption.7}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Controlador digital de motor de paso}}{8}{figure.caption.8}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Encoder rotativo}}{9}{figure.caption.9}%
+\contentsline {figure}{\numberline {4}{\ignorespaces ESP32-WROOM-32}}{11}{figure.caption.11}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Pantalla LCD.}}{12}{figure.caption.12}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Adaptador I2C.}}{13}{figure.caption.13}%
+\contentsline {figure}{\numberline {7}{\ignorespaces convertidor LM2596.}}{13}{figure.caption.14}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Circuito de salida del encoder (basado en hoja de datos E6B2-CWZ6C). Los pines: marrón = Vcc (5–24 V), azul = GND, negro = fase A, blanco = fase B, naranja = fase Z.}}{14}{figure.caption.15}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Señales esperadas en las fases A, B y Z (timing y desfase) por salida de colector abierto.}}{14}{figure.caption.16}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Montaje de prueba del encoder: conexiones a la fuente de 5 V y sondas de osciloscopio en A y B.}}{15}{figure.caption.17}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Señal observada en prueba: canales A y B en cuadratura.}}{15}{figure.caption.18}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Montaje físico del encoder conectado al ESP32 durante las pruebas de integración.}}{16}{figure.caption.19}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Captura de la salida serial o terminal del ESP32 mostrando conteo de pulsos, dirección y detección de Z.}}{16}{figure.caption.20}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Diagrama de conexiones driver y motor, en conjunto con el ESP32.}}{17}{figure.caption.21}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Diagrama de conexiones para utilizar motor.}}{19}{figure.caption.22}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Diagrama de conexiones de sistema.}}{20}{figure.caption.23}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Diagrama de conexiones de integración encoder y esp32.}}{21}{figure.caption.24}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Diagrama de conexiones driver y motor, en conjunto con el esp32.}}{23}{figure.caption.25}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Pinout esp32-wroom-32.}}{41}{figure.caption.33}%

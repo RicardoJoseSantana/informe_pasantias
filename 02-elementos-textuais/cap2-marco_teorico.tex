@@ -2,7 +2,72 @@
 
 \chapter{Marco Teórico}
 
-\section{Motor de paso}
+\section{Fundamentos de Motores Paso a Paso (Stepper Motors) \cite{LeiliMotor}}
 
-Inseratar información aqui...
+Un motor paso a paso es un motor eléctrico que se caracteriza por su capacidad para girar en \textbf{pasos discretos} en lugar de hacerlo de manera continua, a diferencia de los motores convencionales. Este movimiento escalonado garantiza un \textbf{control preciso de la posición y la velocidad}, lo que los convierte en elementos esenciales para aplicaciones que exigen alta precisión, como la robótica, la automatización, las impresoras 3D y las máquinas CNC.
+
+\subsection{Tipos de Motores Paso a Paso}
+
+La clasificación principal se centra en los motores unipolares y bipolares. La diferencia fundamental reside en la configuración de sus devanados y la complejidad del control requerido:
+
+\begin{itemize}
+    \item \textbf{Motor Paso a Paso Unipolar:} Cada fase posee un devanado con toma central, de modo que solo \textbf{la mitad de la bobina se energiza} en un momento dado. Esto resulta en un \textbf{par de salida menor} y una menor eficiencia. Sin embargo, su \textbf{control es más sencillo} y su funcionamiento tiende a ser más suave, con menor vibración y ruido. Son adecuados para aplicaciones de baja potencia.
+    \item \textbf{Motor Paso a Paso Bipolar:} Utiliza un \textbf{único devanado por fase} que debe ser energizado en ambas direcciones. Al utilizar todo el devanado, generan un campo magnético más potente, lo que resulta en un \textbf{mayor par de salida} y una mayor eficiencia en términos de consumo de energía. Requieren circuitos de control más complejos para invertir la dirección de la corriente. Son ideales para aplicaciones de alto par, como máquinas CNC y robótica de alto rendimiento.
+\end{itemize}
+
+La siguiente tabla resume las diferencias clave de eficiencia y control:
+
+\begin{table}[h]
+    \centering
+    \caption{Comparación de Motores Paso a Paso Unipolares y Bipolares}
+    \label{tab:motores}
+    \begin{tabular}{|l|c|c|c|}
+        \hline
+        \textbf{Característica} & \textbf{Unipolar} & \textbf{Bipolar} & \textbf{Fuente} \\
+        \hline
+        Par de Salida & Menor & \textbf{Mayor} & \\
+        \hline
+        Eficiencia & Menor & \textbf{Mayor} & \\
+        \hline
+        Complejidad del Circuito & Más simple & Más complejo & \\
+        \hline
+        Vibración/Ruido & Menor/Más silencioso & Mayor/Más ruidoso & \\
+        \hline
+        Uso del Devanado & Mitad de la bobina & Bobina completa & \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\section{Principios Generales del Encoder (Codificador) \cite{WestEncoder}}
+
+Los \textbf{Encoders} son \textbf{sensores que generan señales digitales en respuesta al movimiento}. Su función primaria es actuar como \textbf{transductores de retroalimentación} esenciales en el control de movimiento para medir velocidad, posición y como entrada para controles de rango. Existen tipos que responden a la rotación (rotatorios) y al movimiento lineal (lineales).
+
+\subsection{Tipos de Codificación}
+
+Los encoders se clasifican fundamentalmente según el tipo de datos que generan:
+
+\begin{itemize}
+    \item \textbf{Encoder Incremental:} Genera \textbf{pulsos} mientras el dispositivo se mueve, proporcionando un número específico de pulsos por revolución (PPR). Se utiliza para medir la velocidad o la trayectoria de posición. Para obtener la posición, los pulsos deben ser acumulados por un contador, y la cuenta es susceptible a pérdida ante una interrupción de energía, requiriendo un reposicionamiento a una referencia u origen al iniciar.
+    \begin{itemize}
+        \item \textbf{Cuadratura:} Cuando se requiere detectar el sentido de la dirección (movimiento bidireccional), se utiliza la salida de cuadratura, la cual consta de dos canales (A y B) desfasados $90^{\circ}$ eléctricos.
+        \item \textbf{Índice (Canal Z):} Muchos encoders incrementales producen una señal adicional, el "índice" o "Canal Z", que se genera \textbf{una vez por revolución} y se usa para localizar una posición de origen específica.
+    \end{itemize}
+
+    \item \textbf{Encoder Absoluto:} Genera un \textbf{mensaje digital multi-bit} que representa la posición actual del encoder. La ventaja clave es que, si se pierde la energía, su salida \textbf{se corrige inmediatamente} al restablecerse, eliminando la necesidad de volver a una posición de referencia. Su resolución se define por el número de bits por mensaje de salida.
+    \begin{itemize}
+        \item \textbf{Código de Salida:} La salida puede ser en código binario o en \textbf{código Gray}, siendo este último preferido porque produce solamente un cambio de un solo bit en cada paso, lo que ayuda a reducir errores de lectura.
+        \item \textbf{Analogía:} La diferencia entre incremental y absoluto es análoga a la de un cronómetro (mide el tiempo transcurrido, incremental) frente a un reloj normal (indica constantemente la hora exacta o posición, absoluto).
+    \end{itemize}
+\end{itemize}
+
+\subsection{Tecnologías y Parámetros de Medición}
+
+\begin{itemize}
+    \item \textbf{Tecnología Operacional:} Los encoders emplean principalmente tecnología \textbf{Óptica} (utiliza un LED brillando a través de un disco con patrones hacia fotodetectores, ofreciendo altas resoluciones y altas velocidades) y \textbf{Magnética} (más resistente al polvo, humedad, golpes térmicos y mecánicos, utiliza campos magnéticos o dispositivos de efecto Hall/magneto resistivos, y puede operar hasta una \textbf{velocidad de $0$}).
+
+    \item \textbf{Resolución y Precisión:}
+    La \textbf{Resolución} es el número de segmentos de medición o unidades por revolución del eje. Es fundamental que la resolución sea igual o mejor a la requerida por la aplicación. La \textbf{Precisión}, sin embargo, es la exactitud con la que opera el transductor. La precisión del sistema se ve limitada por la \textbf{calidad del movimiento mecánico} de la máquina, como errores o contragolpe.
+
+    \item \textbf{Ejemplo de Encoder Rotatorio (E6B2):} El modelo E6B2 es un encoder incremental de propósito general que soporta un amplio rango de voltaje operativo (\textbf{5 a 24 VDC} para el modelo de colector abierto). Presenta resoluciones de hasta \textbf{2,000 pulsos por revolución} (P/R) en un cuerpo de 40 mm, con salidas de fase A, B y Z. Un modelo disponible ofrece \textbf{salida de línea diferencial (*line driver*)} compatible con RS-422A, lo que permite la transmisión de señales a \textbf{larga distancia} (hasta 100 m).
+\end{itemize}
 

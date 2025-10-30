@@ -237,9 +237,6 @@ INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\01-element
 INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\.\01-elementos-pre-textuais\listaTabelas.aux
 INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\.\01-elementos-pre-textuais\listaTabelas.aux
 INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\01-elementos-pre-textuais\listaTabelas.aux
-INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\.\01-elementos-pre-textuais\listaAlgoritmos.aux
-INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\.\01-elementos-pre-textuais\listaAlgoritmos.aux
-INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\01-elementos-pre-textuais\listaAlgoritmos.aux
 INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\.\01-elementos-pre-textuais\sumario.aux
 INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\.\01-elementos-pre-textuais\sumario.aux
 INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\01-elementos-pre-textuais\sumario.aux
@@ -347,15 +344,6 @@ INPUT 01-elementos-pre-textuais\listaTabelas.tex
 INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\Main.lot
 INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\Main.lot
 INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\Main.lot
-INPUT .\01-elementos-pre-textuais\listaAlgoritmos.tex
-INPUT .\01-elementos-pre-textuais\listaAlgoritmos.tex
-OUTPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\.\01-elementos-pre-textuais\listaAlgoritmos.aux
-INPUT .\01-elementos-pre-textuais\listaAlgoritmos.tex
-INPUT .\01-elementos-pre-textuais\listaAlgoritmos.tex
-INPUT 01-elementos-pre-textuais\listaAlgoritmos.tex
-INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\Main.loa
-INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\Main.loa
-INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\Main.loa
 INPUT .\01-elementos-pre-textuais\sumario.tex
 INPUT .\01-elementos-pre-textuais\sumario.tex
 OUTPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\.\01-elementos-pre-textuais\sumario.aux
@@ -398,13 +386,13 @@ OUTPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\.\02-elem
 INPUT .\02-elementos-textuais\cap2-marco_teorico.tex
 INPUT .\02-elementos-textuais\cap2-marco_teorico.tex
 INPUT 02-elementos-textuais\cap2-marco_teorico.tex
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecti1000.tfm
 INPUT .\02-elementos-textuais\cap3-marco_metodologico.tex
 INPUT .\02-elementos-textuais\cap3-marco_metodologico.tex
 OUTPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\.\02-elementos-textuais\cap3-marco_metodologico.aux
 INPUT .\02-elementos-textuais\cap3-marco_metodologico.tex
 INPUT .\02-elementos-textuais\cap3-marco_metodologico.tex
 INPUT 02-elementos-textuais\cap3-marco_metodologico.tex
-INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecti1000.tfm
 INPUT .\02-elementos-textuais\cap4-trabajo_realizado.tex
 INPUT .\02-elementos-textuais\cap4-trabajo_realizado.tex
 OUTPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\.\02-elementos-textuais\cap4-trabajo_realizado.aux
@@ -513,6 +501,13 @@ INPUT .\04-figuras\encoder-code.jpg
 INPUT .\04-figuras\encoder-code.jpg
 INPUT .\04-figuras\encoder-code.jpg
 INPUT .\04-figuras\encoder-code.jpg
+INPUT .\04-figuras\motor-esp.jpg
+INPUT .\04-figuras\motor-esp.jpg
+INPUT .\04-figuras\motor-esp.jpg
+INPUT .\04-figuras\motor-esp.jpg
+INPUT .\04-figuras\motor-esp.jpg
+INPUT .\04-figuras\motor-esp.jpg
+INPUT .\04-figuras\motor-esp.jpg
 INPUT .\04-figuras\diagrama-motor.jpg
 INPUT .\04-figuras\diagrama-motor.jpg
 INPUT .\04-figuras\diagrama-motor.jpg
@@ -544,6 +539,16 @@ INPUT .\07-Códigos\maine.c
 INPUT .\07-Códigos\maine.c
 INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ectt1200.tfm
 INPUT 07-Códigos\maine.c
+INPUT .\04-figuras\diagrama_conexion_motor_bb.png
+INPUT .\04-figuras\diagrama_conexion_motor_bb.png
+INPUT .\04-figuras\diagrama_conexion_motor_bb.png
+INPUT .\04-figuras\diagrama_conexion_motor_bb.png
+INPUT .\04-figuras\diagrama_conexion_motor_bb.png
+INPUT .\04-figuras\diagrama_conexion_motor_bb.png
+INPUT .\04-figuras\diagrama_conexion_motor_bb.png
+INPUT .\07-Códigos\mainm.c
+INPUT .\07-Códigos\mainm.c
+INPUT 07-Códigos\mainm.c
 INPUT .\02-elementos-textuais\cap6-conclusion.tex
 INPUT .\02-elementos-textuais\cap6-conclusion.tex
 OUTPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\.\02-elementos-textuais\cap6-conclusion.aux
@@ -571,6 +576,12 @@ INPUT 07-Códigos\encoder.h
 INPUT .\07-Códigos\encoder.c
 INPUT .\07-Códigos\encoder.c
 INPUT 07-Códigos\encoder.c
+INPUT .\07-Códigos\stepperMotor.h
+INPUT .\07-Códigos\stepperMotor.h
+INPUT 07-Códigos\stepperMotor.h
+INPUT .\07-Códigos\stepperMotor.c
+INPUT .\07-Códigos\stepperMotor.c
+INPUT 07-Códigos\stepperMotor.c
 INPUT .\03-elementos-pos-textuais\anexos.tex
 INPUT .\03-elementos-pos-textuais\anexos.tex
 OUTPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\.\03-elementos-pos-textuais\anexos.aux
@@ -598,7 +609,6 @@ INPUT .\04-figuras\esp32 pinout.jpg
 INPUT .\04-figuras\esp32 pinout.jpg
 OUTPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\Main.lof
 OUTPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\Main.lot
-OUTPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\Main.loa
 OUTPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\Main.toc
 INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\Main.aux
 INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\.\01-elementos-pre-textuais\resumoPt.aux
@@ -610,9 +620,6 @@ INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\01-element
 INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\.\01-elementos-pre-textuais\listaTabelas.aux
 INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\.\01-elementos-pre-textuais\listaTabelas.aux
 INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\01-elementos-pre-textuais\listaTabelas.aux
-INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\.\01-elementos-pre-textuais\listaAlgoritmos.aux
-INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\.\01-elementos-pre-textuais\listaAlgoritmos.aux
-INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\01-elementos-pre-textuais\listaAlgoritmos.aux
 INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\.\01-elementos-pre-textuais\sumario.aux
 INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\.\01-elementos-pre-textuais\sumario.aux
 INPUT c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\01-elementos-pre-textuais\sumario.aux
@@ -650,10 +657,10 @@ INPUT C:\Users\Ricardo\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\e
 INPUT C:\Users\Ricardo\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
 INPUT C:\Users\Ricardo\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcbx1200.pk
 INPUT C:\Users\Ricardo\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcbx1200.pk
-INPUT C:\Users\Ricardo\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
-INPUT C:\Users\Ricardo\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
 INPUT C:\Users\Ricardo\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk
 INPUT C:\Users\Ricardo\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk
+INPUT C:\Users\Ricardo\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
+INPUT C:\Users\Ricardo\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
 INPUT C:\Users\Ricardo\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\Ricardo\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\Ricardo\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk
