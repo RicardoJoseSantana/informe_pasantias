@@ -12,9 +12,12 @@
 \contentsline {figure}{\numberline {11}{\ignorespaces Señal observada en prueba: canales A y B en cuadratura.}}{15}{figure.caption.18}%
 \contentsline {figure}{\numberline {12}{\ignorespaces Montaje físico del encoder conectado al ESP32 durante las pruebas de integración.}}{16}{figure.caption.19}%
 \contentsline {figure}{\numberline {13}{\ignorespaces Captura de la salida serial o terminal del ESP32 mostrando conteo de pulsos, dirección y detección de Z.}}{16}{figure.caption.20}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Diagrama de conexiones driver y motor, en conjunto con el ESP32.}}{17}{figure.caption.21}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Diagrama de conexiones para utilizar motor.}}{19}{figure.caption.22}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Diagrama de conexiones de sistema.}}{20}{figure.caption.23}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Diagrama de conexiones de integración encoder y esp32.}}{21}{figure.caption.24}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Diagrama de conexiones driver y motor, en conjunto con el esp32.}}{23}{figure.caption.25}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Pinout esp32-wroom-32.}}{41}{figure.caption.33}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Conexiones a señal de colector abierto}}{17}{figure.caption.21}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Secuencia característica de señales de control.}}{17}{figure.caption.22}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Diagrama de conexiones driver y motor, en conjunto con el ESP32.}}{18}{figure.caption.23}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Diagrama de conexiones de integración encoder y esp32.}}{20}{figure.caption.24}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Diagrama de conexiones driver y motor, en conjunto con el esp32.}}{22}{figure.caption.25}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Vista inferior de modulo de trabajo basado en esp32.}}{25}{figure.caption.26}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Vista superior de modulo de trabajo basado en esp32.}}{25}{figure.caption.27}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Diagrama de conexiones de sistema.}}{26}{figure.caption.28}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Pinout esp32-wroom-32.}}{45}{figure.caption.42}%

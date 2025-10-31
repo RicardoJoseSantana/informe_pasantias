@@ -6,7 +6,7 @@
 
         \begin{figure}[H]
             \centering
-            \includegraphics[height=4cm]{04-figuras/stepper-motor.jpg}
+            \includegraphics[height=5cm]{04-figuras/stepper-motor.jpg}
             \caption{Motor de paso}
             \label{fig:stepper-motor}
         \end{figure}
@@ -25,7 +25,7 @@
 
         \begin{figure}[H]
             \centering
-            \includegraphics[height=4cm]{04-figuras/driver-motor.jpg}
+            \includegraphics[height=5cm]{04-figuras/driver-motor.jpg}
             \caption{Controlador digital de motor de paso}
             \label{fig:driver-motor}
         \end{figure}
@@ -89,7 +89,7 @@
 
         \begin{figure}[H]
             \centering
-            \includegraphics[height=4cm]{04-figuras/esp32.jpg}
+            \includegraphics[height=5cm]{04-figuras/esp32.jpg}
             \caption{ESP32-WROOM-32}
             \label{fig:ESP32}
         \end{figure}
@@ -132,7 +132,7 @@
 
         \begin{figure}[H]
             \centering
-            \includegraphics[height=4cm]{04-figuras/pantalla-lcd.jpg}
+            \includegraphics[height=5cm]{04-figuras/pantalla-lcd.jpg}
             \caption{Pantalla LCD.}
             \label{fig:pantalla-lcd}
         \end{figure}
@@ -143,7 +143,7 @@
 
         \begin{figure}[H]
             \centering
-            \includegraphics[height=4cm]{04-figuras/adaptador-i2c.jpg}
+            \includegraphics[height=5cm]{04-figuras/adaptador-i2c.jpg}
             \caption{Adaptador I2C.}
             \label{fig:adaptador-i2c}
         \end{figure}
@@ -154,7 +154,7 @@
 
         \begin{figure}[H]
             \centering
-            \includegraphics[height=4cm]{04-figuras/convertidor-dc-dc.jpg}
+            \includegraphics[height=5cm]{04-figuras/convertidor-dc-dc.jpg}
             \caption{convertidor LM2596.}
             \label{fig:convertidor-dcdc}
         \end{figure}
@@ -170,14 +170,14 @@
 
         \begin{figure}[H]
             \centering
-            \includegraphics[height=4cm]{04-figuras/encoder-out-interno.png}
+            \includegraphics[height=5cm]{04-figuras/encoder-out-interno.png}
             \caption{Circuito de salida del encoder (basado en hoja de datos E6B2-CWZ6C). Los pines: marrón = Vcc (5–24 V), azul = GND, negro = fase A, blanco = fase B, naranja = fase Z.}
             \label{fig:encoder-out-interno}
         \end{figure}
 
         \begin{figure}[H]
             \centering
-            \includegraphics[height=4cm]{04-figuras/encoder-out-senal.png}
+            \includegraphics[height=5cm]{04-figuras/encoder-out-senal.png}
             \caption{Señales esperadas en las fases A, B y Z (timing y desfase) por salida de colector abierto.}
             \label{fig:encoder-out-senal}
         \end{figure}
@@ -191,14 +191,14 @@
 
         \begin{figure}[H]
             \centering
-            \includegraphics[height=4cm]{04-figuras/encoder-prueba.jpg}
+            \includegraphics[height=5cm]{04-figuras/encoder-prueba.jpg}
             \caption{Montaje de prueba del encoder: conexiones a la fuente de 5 V y sondas de osciloscopio en A y B.}
             \label{fig:encoder-prueba}
         \end{figure}
 
         \begin{figure}[H]
             \centering
-            \includegraphics[height=4cm]{04-figuras/encoder-senal.jpg}
+            \includegraphics[height=5cm]{04-figuras/encoder-senal.jpg}
             \caption{Señal observada en prueba: canales A y B en cuadratura.}
             \label{fig:encoder-prueba-senal}
         \end{figure}
@@ -214,14 +214,14 @@
 
         \begin{figure}[H]
             \centering
-            \includegraphics[height=4cm]{04-figuras/encoder-esp.jpg}
+            \includegraphics[height=5cm]{04-figuras/encoder-esp.jpg}
             \caption{Montaje físico del encoder conectado al ESP32 durante las pruebas de integración.}
             \label{fig:encoder-esp}
         \end{figure}
 
         \begin{figure}[H]
             \centering
-            \includegraphics[height=4cm]{04-figuras/encoder-code.jpg}
+            \includegraphics[height=5cm]{04-figuras/encoder-code.jpg}
             \caption{Captura de la salida serial o terminal del ESP32 mostrando conteo de pulsos, dirección y detección de Z.}
             \label{fig:encoder-codeserial}
         \end{figure}
@@ -234,82 +234,99 @@
 
     En esta sección se documenta la integración del controlador de motor paso a paso DM542T con el motor 23HS22-2804S y su control desde el ESP32. El montaje se realizó siguiendo el diagrama de conexiones (ver figura \ref{fig:conexiones-motor} en los resultados) donde se muestran las señales PUL (pulsos), DIR (dirección) y ENA (habilitación).
 
+    \subsection{Caracterización del driver}
+
+        Basándose en la hoja de datos del driver \cite{steeperonline}, se establecen las conexiones con el esp32 con el driver a través de transistores \ref{fig:base-conexion-esp-driver}, los cuales trabajan en zonas de corte-saturación.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[height=5cm]{04-figuras/driver-open-colector.png}
+            \caption{Conexiones a señal de colector abierto}
+            \label{fig:base-conexion-esp-driver}
+        \end{figure}
+
+        Por otra parte también se indican las señales necesarias para establecer el control (fig \ref{})
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[height=5cm]{04-figuras/driver-senales.png}
+            \caption{Secuencia característica de señales de control.}
+            \label{fig:base-driver-senales}
+        \end{figure}
+
     \subsection{Conexiones y consideraciones de señal}
 
-    El DM542T acepta entradas ópticamente aisladas para PUL, DIR y ENA; puede funcionar con niveles lógicos compatibles con 5 V cuando el aislamiento está configurado apropiadamente. En la integración con el ESP32 se utilizó la siguiente convención (ejemplo):
+        El DM542T acepta entradas ópticamente aisladas para PUL, DIR y ENA; puede funcionar con niveles lógicos compatibles con 5V o 24V cuando el aislamiento está configurado apropiadamente. En la integración con el ESP32 se utilizó la siguiente convención (ejemplo):
 
-    \begin{itemize}
-        \item PUL: recibe el tren de pulsos que hace avanzar el motor.
-        \item DIR: selecciona el sentido de giro (hora/anti-hora).
-        \item ENA: señal opcional para habilitar o deshabilitar el driver.
-    \end{itemize}
+        \begin{itemize}
+            \item PUL: recibe el tren de pulsos que hace avanzar el motor.
+            \item DIR: selecciona el sentido de giro (horario/anti-horario).
+            \item ENA: señal opcional para habilitar o deshabilitar el driver.
+        \end{itemize}
 
-    En el diagrama de conexiones usado (\ref{fig:montaje-conexiones-motor}) se observa la ruta desde el ESP32 a las entradas del DM542T. Es importante respetar la polaridad y los jumpers de configuración del driver (niveles y pull-ups) y emplear una masa común cuando no se usa el aislamiento óptico.
+        En el diagrama de conexiones usado (\ref{fig:montaje-conexiones-motor}) se observa la ruta desde el ESP32 a las entradas del DM542T. Es importante respetar la polaridad y los jumpers de configuración del driver (niveles y pull-ups).
 
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=\textwidth]{04-figuras/motor-esp.jpg}
-        \caption{Diagrama de conexiones driver y motor, en conjunto con el ESP32.}
-        \label{fig:montaje-conexiones-motor}
-    \end{figure}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[height=5cm]{04-figuras/motor-esp.jpg}
+            \caption{Diagrama de conexiones driver y motor, en conjunto con el ESP32.}
+            \label{fig:montaje-conexiones-motor}
+        \end{figure}
 
     \subsection{Cálculo de pulsos por revolución y configuración de microstepping}
 
-    Para controlar exactamente una vuelta del eje se debe enviar al pin PUL un número de pulsos igual al número de pasos por revolución del motor multiplicado por el factor de microstepping configurado en el DM542T.
+        Fórmula general:
 
-    Fórmula general:
+        \begin{equation}\label{eq:PUL}
+            \frac{f_{pulsos}}{f_{motor}} = PPR            
+        \end{equation}
 
+        donde:
+
+        \begin{itemize}
+            \item $f_{pulsos}$:
+            \item $f_{motor}$:
+            \item $PPR$:
+        \end{itemize}
 
     \subsection{Frecuencia de pulsos: mínimos y máximos}
 
-    El DM542T soporta una frecuencia de pulsos de hasta 200 kHz (según la hoja de datos) y para una operación confiable en este montaje se utilizó como frecuencia mínima práctica 10 kHz. Con estos límites, el tiempo requerido para una revolución completa queda:
+        El DM542T soporta una frecuencia de pulsos de hasta 200 kHz (según la hoja de datos) y para una operación confiable en este montaje se utilizó como frecuencia mínima práctica 10 kHz. Con estos límites, el tiempo requerido para una revolución completa queda:
 
-    - A 10 kHz: tiempo = Pulsesperrev / 10000 = 3200 / 10,000 = 0.32 s $\rightarrow$ RPM $\approx$ 187.5 rpm.
-    - A 200 kHz: tiempo = 3200 / 200000 = 0.016 s $\rightarrow$ RPM $\approx$ 3750 rpm.
+        - A 10 kHz: tiempo = Pulsesperrev / 10000 = 3200 / 10,000 = 0.32 s $\rightarrow$ RPM $\approx$ 187.5 rpm.
+        - A 200 kHz: tiempo = 3200 / 200000 = 0.016 s $\rightarrow$ RPM $\approx$ 3750 rpm.
 
-    Estos valores son orientativos: la velocidad segura depende de la carga, el par requerido y las limitaciones térmicas del motor y driver. Ajuste la corriente del DM542T con los dip switches al valor nominal del motor y emplee microstepping según la necesidad de resolución/torque.
+        Estos valores son orientativos: la velocidad segura depende de la carga, el par requerido y las limitaciones térmicas del motor y driver. Ajuste la corriente del DM542T con los dip switches al valor nominal del motor y emplee microstepping según la necesidad de resolución/torque.
 
     \subsection{Generación de pulsos desde el ESP32}
 
-    Para frecuencias altas (>> 10 kHz) es recomendable usar periféricos de hardware del ESP32 para generar el tren de pulsos:
+        Para frecuencias altas (>> 10 kHz) es recomendable usar periféricos de hardware del ESP32 para generar el tren de pulsos:
 
-    - RMT (Remote Control) o PWM/hardware timer para generar pulsos en hardware, evitando la pérdida de pulsos por bloqueo en el scheduler.
-    - Evitar usar delays software largos o loops con digitalWrite a altas frecuencias (riesgo de jitter y pérdida).
+        - RMT (Remote Control) o PWM/hardware timer para generar pulsos en hardware, evitando la pérdida de pulsos por bloqueo en el scheduler.
+        - Evitar usar delays software largos o loops con digitalWrite a altas frecuencias (riesgo de jitter y pérdida).
 
-    En el control de una vuelta el algoritmo básico es:
+        En el control de una vuelta el algoritmo básico es:
 
-    1. Configurar GPIO DIR al nivel deseado.
-    2. Habilitar ENA (si se usa).
-    3. Generar N = Pulsesperrev pulsos en PUL con la frecuencia deseada.
-    4. Deshabilitar ENA (opcional).
+        1. Configurar GPIO DIR al nivel deseado.
+        2. Habilitar ENA (si se usa).
+        3. Generar N = Pulsesperrev pulsos en PUL con la frecuencia deseada.
+        4. Deshabilitar ENA (opcional).
 
     \subsection{Prueba de una vuelta — procedimiento y observaciones}
 
-    Procedimiento realizado:
+        Procedimiento realizado:
 
-    1. Configurar el DM542T a 1/16 microstepping y corriente adecuada para el motor.
-    2. Conectar PUL a un pin del ESP32 capaz de salida PWM/RMT y DIR a un GPIO digital.
-    3. Generar 3200 pulsos a 10 kHz y verificar que el eje completa una revolución.
-    4. Repetir a 50 kHz y observar comportamiento; finalmente probar en el rango hasta 200 kHz para verificar respuesta.
+        1. Configurar el DM542T a 1/16 microstepping y corriente adecuada para el motor.
+        2. Conectar PUL a un pin del ESP32 capaz de salida PWM/RMT y DIR a un GPIO digital.
+        3. Generar 3200 pulsos a 10 kHz y verificar que el eje completa una revolución.
+        4. Repetir a 50 kHz y observar comportamiento; finalmente probar en el rango hasta 200 kHz para verificar respuesta.
 
-    Observaciones recomendadas:
+        Observaciones recomendadas:
 
-    - Verificar que la corriente de ajuste del driver sea la adecuada (evitar sobrecalentamiento).
-    - Observar vibraciones a microsteppings bajos y calor del motor a altas frecuencias.
-    - Si se experimenta pérdida de pasos, reducir la velocidad, aumentar corriente o mejorar la aceleración (rampado) de la secuencia de pulsos.
+        - Verificar que la corriente de ajuste del driver sea la adecuada (evitar sobrecalentamiento).
+        - Observar vibraciones a microsteppings bajos y calor del motor a altas frecuencias.
+        - Si se experimenta pérdida de pasos, reducir la velocidad, aumentar corriente o mejorar la aceleración (rampado) de la secuencia de pulsos.
 
-\section{Diagrama de Conexiones.}
+\section{fabricación de módulo de trabajo (basado en esp32)}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{04-figuras/diagrama-motor.jpg}
-    \caption{Diagrama de conexiones para utilizar motor.}
-    \label{fig:diagrama-motor}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{04-figuras/diagrama_conexion_control_bb.png}
-    \caption{Diagrama de conexiones de sistema.}
-    \label{fig:diagrama-completo}
-\end{figure}
+\section{Ejemplo práctico: Péndulo invertido}        

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.27)  29 OCT 2025 22:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.27)  30 OCT 2025 23:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1042,28 +1042,38 @@ Overfull \hbox (1.87042pt too wide) detected at line 15
 
 
 ]
-Overfull \hbox (1.87042pt too wide) detected at line 35
+Overfull \hbox (1.87042pt too wide) detected at line 37
 \T1/cmr/bx/n/12 6  --   
  []
 
 
-Overfull \hbox (1.87042pt too wide) detected at line 38
+Overfull \hbox (1.87042pt too wide) detected at line 42
 \T1/cmr/bx/n/12 7  --   
  []
 
 
-Overfull \hbox (2.31027pt too wide) detected at line 43
+Overfull \hbox (2.31027pt too wide) detected at line 47
 \T1/cmr/bx/n/12 APÊNDICE  A  --   
  []
 
 
-Overfull \hbox (2.31027pt too wide) detected at line 49
+Overfull \hbox (2.31027pt too wide) detected at line 53
 \T1/cmr/bx/n/12 ANEXO  A  --   
  []
 
 
-Overfull \hbox (1.71318pt too wide) detected at line 50
+Overfull \hbox (1.71318pt too wide) detected at line 54
 \T1/cmr/bx/n/12 ANEXO  B  --   
+ []
+
+
+Overfull \hbox (1.86594pt too wide) detected at line 55
+\T1/cmr/bx/n/12 ANEXO  C  --   
+ []
+
+
+Overfull \hbox (2.463pt too wide) detected at line 56
+\T1/cmr/bx/n/12 ANEXO  D  --   
  []
 
 )
@@ -1154,16 +1164,16 @@ Cap\'{\i }tulo 4.
 
  (02-elementos-textuais/cap4-trabajo_realizado.tex
 Cap\'{\i }tulo 5.
-<04-figuras/stepper-motor.jpg, id=251, 803.0pt x 803.0pt>
+<04-figuras/stepper-motor.jpg, id=281, 803.0pt x 803.0pt>
 File: 04-figuras/stepper-motor.jpg Graphic file (type jpg)
 <use 04-figuras/stepper-motor.jpg>
 Package pdftex.def Info: 04-figuras/stepper-motor.jpg  used on input line 9.
-(pdftex.def)             Requested size: 113.80379pt x 113.81102pt.
-<04-figuras/driver-motor.jpg, id=255, 1003.75pt x 710.655pt>
+(pdftex.def)             Requested size: 142.25475pt x 142.26378pt.
+<04-figuras/driver-motor.jpg, id=285, 1003.75pt x 710.655pt>
 File: 04-figuras/driver-motor.jpg Graphic file (type jpg)
 <use 04-figuras/driver-motor.jpg>
 Package pdftex.def Info: 04-figuras/driver-motor.jpg  used on input line 28.
-(pdftex.def)             Requested size: 160.74112pt x 113.81102pt.
+(pdftex.def)             Requested size: 200.93024pt x 142.26378pt.
 
 
 [8
@@ -1176,12 +1186,12 @@ Overfull \hbox (2.50562pt too wide) in paragraph at lines 50--50
 []\T1/cmr/m/n/14.4 ROTATORY EN-CO-DER (IN-CRE-MEN-TAL) E6B2-CWZ6C OM-RON
  []
 
-<04-figuras/encoder.jpg, id=264, 667.49374pt x 667.49374pt>
+<04-figuras/encoder.jpg, id=292, 667.49374pt x 667.49374pt>
 File: 04-figuras/encoder.jpg Graphic file (type jpg)
 <use 04-figuras/encoder.jpg>
 Package pdftex.def Info: 04-figuras/encoder.jpg  used on input line 56.
 (pdftex.def)             Requested size: 136.50139pt x 136.50099pt.
-<04-figuras/encoderv2.jpg, id=265, 803.0pt x 803.0pt>
+<04-figuras/encoderv2.jpg, id=293, 803.0pt x 803.0pt>
 File: 04-figuras/encoderv2.jpg Graphic file (type jpg)
 <use 04-figuras/encoderv2.jpg>
 Package pdftex.def Info: 04-figuras/encoderv2.jpg  used on input line 63.
@@ -1189,111 +1199,110 @@ Package pdftex.def Info: 04-figuras/encoderv2.jpg  used on input line 63.
 
 
 [9 <./04-figuras/encoder.jpg> <./04-figuras/encoderv2.jpg>] (05-tabelas/especificaciones_encoder.tex)
-<04-figuras/esp32.jpg, id=272, 501.875pt x 364.36125pt>
+<04-figuras/esp32.jpg, id=302, 501.875pt x 364.36125pt>
 File: 04-figuras/esp32.jpg Graphic file (type jpg)
 <use 04-figuras/esp32.jpg>
 Package pdftex.def Info: 04-figuras/esp32.jpg  used on input line 92.
-(pdftex.def)             Requested size: 156.75896pt x 113.81102pt.
+(pdftex.def)             Requested size: 195.95253pt x 142.26378pt.
 
 
 [10]
 
 [11 <./04-figuras/esp32.jpg>]
-<04-figuras/pantalla-lcd.jpg, id=290, 770.88pt x 578.16pt>
+<04-figuras/pantalla-lcd.jpg, id=320, 770.88pt x 578.16pt>
 File: 04-figuras/pantalla-lcd.jpg Graphic file (type jpg)
 <use 04-figuras/pantalla-lcd.jpg>
 Package pdftex.def Info: 04-figuras/pantalla-lcd.jpg  used on input line 135.
-(pdftex.def)             Requested size: 151.73839pt x 113.81102pt.
+(pdftex.def)             Requested size: 189.68475pt x 142.26378pt.
 
 
 Package hyperref Warning: Suppressing empty link on input line 140.
 
-<04-figuras/adaptador-i2c.jpg, id=292, 803.0pt x 803.0pt>
+<04-figuras/adaptador-i2c.jpg, id=322, 803.0pt x 803.0pt>
 File: 04-figuras/adaptador-i2c.jpg Graphic file (type jpg)
 <use 04-figuras/adaptador-i2c.jpg>
 Package pdftex.def Info: 04-figuras/adaptador-i2c.jpg  used on input line 146.
-(pdftex.def)             Requested size: 113.80379pt x 113.81102pt.
+(pdftex.def)             Requested size: 142.25475pt x 142.26378pt.
 
 
 [12 <./04-figuras/pantalla-lcd.jpg>]
-<04-figuras/convertidor-dc-dc.jpg, id=301, 501.875pt x 390.45876pt>
+<04-figuras/convertidor-dc-dc.jpg, id=331, 501.875pt x 390.45876pt>
 File: 04-figuras/convertidor-dc-dc.jpg Graphic file (type jpg)
 <use 04-figuras/convertidor-dc-dc.jpg>
 Package pdftex.def Info: 04-figuras/convertidor-dc-dc.jpg  used on input line 157.
-(pdftex.def)             Requested size: 146.28284pt x 113.81102pt.
+(pdftex.def)             Requested size: 182.85738pt x 142.26378pt.
 
 
 [13 <./04-figuras/adaptador-i2c.jpg> <./04-figuras/convertidor-dc-dc.jpg>]
-<04-figuras/encoder-out-interno.png, id=311, 663.22781pt x 367.3725pt>
+<04-figuras/encoder-out-interno.png, id=340, 663.22781pt x 367.3725pt>
 File: 04-figuras/encoder-out-interno.png Graphic file (type png)
 <use 04-figuras/encoder-out-interno.png>
 Package pdftex.def Info: 04-figuras/encoder-out-interno.png  used on input line 173.
-(pdftex.def)             Requested size: 205.46693pt x 113.81102pt.
-<04-figuras/encoder-out-senal.png, id=312, 559.33969pt x 432.86719pt>
+(pdftex.def)             Requested size: 256.8362pt x 142.26378pt.
+<04-figuras/encoder-out-senal.png, id=341, 559.33969pt x 432.86719pt>
 File: 04-figuras/encoder-out-senal.png Graphic file (type png)
 <use 04-figuras/encoder-out-senal.png>
 Package pdftex.def Info: 04-figuras/encoder-out-senal.png  used on input line 180.
-(pdftex.def)             Requested size: 147.06357pt x 113.81102pt.
-<04-figuras/encoder-prueba.jpg, id=314, 2176.13pt x 1477.52pt>
-File: 04-figuras/encoder-prueba.jpg Graphic file (type jpg)
-<use 04-figuras/encoder-prueba.jpg>
-Package pdftex.def Info: 04-figuras/encoder-prueba.jpg  used on input line 194.
-(pdftex.def)             Requested size: 167.61897pt x 113.81102pt.
+(pdftex.def)             Requested size: 183.8316pt x 142.26378pt.
 
 
 [14 <./04-figuras/encoder-out-interno.png> <./04-figuras/encoder-out-senal.png>]
-<04-figuras/encoder-senal.jpg, id=321, 803.0pt x 481.8pt>
+<04-figuras/encoder-prueba.jpg, id=350, 2176.13pt x 1477.52pt>
+File: 04-figuras/encoder-prueba.jpg Graphic file (type jpg)
+<use 04-figuras/encoder-prueba.jpg>
+Package pdftex.def Info: 04-figuras/encoder-prueba.jpg  used on input line 194.
+(pdftex.def)             Requested size: 209.52373pt x 142.26378pt.
+<04-figuras/encoder-senal.jpg, id=351, 803.0pt x 481.8pt>
 File: 04-figuras/encoder-senal.jpg Graphic file (type jpg)
 <use 04-figuras/encoder-senal.jpg>
 Package pdftex.def Info: 04-figuras/encoder-senal.jpg  used on input line 201.
-(pdftex.def)             Requested size: 189.68524pt x 113.81102pt.
-<04-figuras/encoder-esp.jpg, id=326, 1843.88875pt x 1382.16376pt>
+(pdftex.def)             Requested size: 237.1035pt x 142.26378pt.
+<04-figuras/encoder-esp.jpg, id=356, 1843.88875pt x 1382.16376pt>
 File: 04-figuras/encoder-esp.jpg Graphic file (type jpg)
 <use 04-figuras/encoder-esp.jpg>
 Package pdftex.def Info: 04-figuras/encoder-esp.jpg  used on input line 217.
-(pdftex.def)             Requested size: 151.81883pt x 113.81102pt.
+(pdftex.def)             Requested size: 189.77354pt x 142.26378pt.
 
 
 [15 <./04-figuras/encoder-prueba.jpg> <./04-figuras/encoder-senal.jpg>]
-<04-figuras/encoder-code.jpg, id=331, 852.18375pt x 439.6425pt>
+<04-figuras/encoder-code.jpg, id=361, 852.18375pt x 439.6425pt>
 File: 04-figuras/encoder-code.jpg Graphic file (type jpg)
 <use 04-figuras/encoder-code.jpg>
 Package pdftex.def Info: 04-figuras/encoder-code.jpg  used on input line 224.
-(pdftex.def)             Requested size: 220.6003pt x 113.81102pt.
+(pdftex.def)             Requested size: 275.74713pt x 142.26378pt.
+<04-figuras/driver-open-colector.png, id=366, 669.2503pt x 368.1253pt>
+File: 04-figuras/driver-open-colector.png Graphic file (type png)
+<use 04-figuras/driver-open-colector.png>
+Package pdftex.def Info: 04-figuras/driver-open-colector.png  used on input line 243.
+(pdftex.def)             Requested size: 258.6374pt x 142.26378pt.
 
 
 [16 <./04-figuras/encoder-esp.jpg> <./04-figuras/encoder-code.jpg>]
-<04-figuras/motor-esp.jpg, id=338, 2067.725pt x 1714.405pt>
+
+LaTeX Warning: Reference `' on page 17 undefined on input line 248.
+
+<04-figuras/driver-senales.png, id=371, 453.94594pt x 331.99031pt>
+File: 04-figuras/driver-senales.png Graphic file (type png)
+<use 04-figuras/driver-senales.png>
+Package pdftex.def Info: 04-figuras/driver-senales.png  used on input line 252.
+(pdftex.def)             Requested size: 194.52106pt x 142.26378pt.
+<04-figuras/motor-esp.jpg, id=373, 2067.725pt x 1714.405pt>
 File: 04-figuras/motor-esp.jpg Graphic file (type jpg)
 <use 04-figuras/motor-esp.jpg>
-Package pdftex.def Info: 04-figuras/motor-esp.jpg  used on input line 251.
-(pdftex.def)             Requested size: 455.0pt x 377.24875pt.
+Package pdftex.def Info: 04-figuras/motor-esp.jpg  used on input line 271.
+(pdftex.def)             Requested size: 171.5738pt x 142.26378pt.
 
 
-[17 <./04-figuras/motor-esp.jpg>]
-<04-figuras/diagrama-motor.jpg, id=343, 1003.75pt x 907.39pt>
-File: 04-figuras/diagrama-motor.jpg Graphic file (type jpg)
-<use 04-figuras/diagrama-motor.jpg>
-Package pdftex.def Info: 04-figuras/diagrama-motor.jpg  used on input line 305.
-(pdftex.def)             Requested size: 455.0pt x 411.32623pt.
+[17 <./04-figuras/driver-open-colector.png> <./04-figuras/driver-senales.png>]
 
+[18 <./04-figuras/motor-esp.jpg>])
 
-[18]
-<04-figuras/diagrama_conexion_control_bb.png, id=350, 1282.92633pt x 687.368pt>
-File: 04-figuras/diagrama_conexion_control_bb.png Graphic file (type png)
-<use 04-figuras/diagrama_conexion_control_bb.png>
-Package pdftex.def Info: 04-figuras/diagrama_conexion_control_bb.png  used on input line 312.
-(pdftex.def)             Requested size: 455.0pt x 243.78136pt.
-)
-
-[19 <./04-figuras/diagrama-motor.jpg>]
-
-[20 <./04-figuras/diagrama_conexion_control_bb.png>]
+[19]
 \openout2 = `./02-elementos-textuais/cap5-resultados.aux'.
 
  (02-elementos-textuais/cap5-resultados.tex
 Cap\'{\i }tulo 6.
-<04-figuras/diagrama_conexion_encoder_bb.png, id=360, 511.77867pt x 245.718pt>
+<04-figuras/diagrama_conexion_encoder_bb.png, id=393, 511.77867pt x 245.718pt>
 File: 04-figuras/diagrama_conexion_encoder_bb.png Graphic file (type png)
 <use 04-figuras/diagrama_conexion_encoder_bb.png>
 Package pdftex.def Info: 04-figuras/diagrama_conexion_encoder_bb.png  used on input line 7.
@@ -1301,84 +1310,122 @@ Package pdftex.def Info: 04-figuras/diagrama_conexion_encoder_bb.png  used on in
 File: "07-CÃ³digos/maine.c"  (verbatim)
 
 
-[21
+[20
 
 
 
 
  <./04-figuras/diagrama_conexion_encoder_bb.png>]
-Overfull \hbox (100.61432pt too wide) in paragraph at lines 12--12
-[]            \T1/cmtt/m/n/12 ESP_LOGW(TAG, "½Pulso de INDICE (Z) detectado! El contador se ha reseteado.");[] 
+Overfull \hbox (6.51917pt too wide) in paragraph at lines 14--14
+ []        \T1/cmtt/m/n/12 ESP_LOGE(TAG, "Fallo al inicializar el encoder, deteniendo.");[] 
  []
 
 
-Overfull \hbox (1.83844pt too wide) in paragraph at lines 12--12
-[]        \T1/cmtt/m/n/12 vTaskDelay(pdMS_TO_TICKS(500)); // Mostrar datos 1 vez por segundo[] 
+Overfull \hbox (129.98901pt too wide) in paragraph at lines 14--14
+ []            \T1/cmtt/m/n/12 ESP_LOGW(TAG, "½Pulso de INDICE (Z) detectado! El contador se ha reseteado.");[] 
  []
 
-<04-figuras/diagrama_conexion_motor_bb.png, id=367, 883.3pt x 464.66933pt>
+
+Overfull \hbox (31.21313pt too wide) in paragraph at lines 14--14
+ []        \T1/cmtt/m/n/12 vTaskDelay(pdMS_TO_TICKS(500)); // Mostrar datos 1 vez por segundo[] 
+ []
+
+<04-figuras/diagrama_conexion_motor_bb.png, id=401, 883.3pt x 464.66933pt>
 File: 04-figuras/diagrama_conexion_motor_bb.png Graphic file (type png)
 <use 04-figuras/diagrama_conexion_motor_bb.png>
-Package pdftex.def Info: 04-figuras/diagrama_conexion_motor_bb.png  used on input line 18.
+Package pdftex.def Info: 04-figuras/diagrama_conexion_motor_bb.png  used on input line 21.
 (pdftex.def)             Requested size: 455.0pt x 239.36055pt.
 
 
-[22]
+[21]
 File: "07-CÃ³digos/mainm.c"  (verbatim)
 
 
-[23 <./04-figuras/diagrama_conexion_motor_bb.png>]
+[22 <./04-figuras/diagrama_conexion_motor_bb.png>]
+Overfull \hbox (12.69266pt too wide) in paragraph at lines 28--28
+ []        \T1/cmtt/m/n/12 ESP_LOGE("MAIN", "Fallo al inicializar el motor, deteniendo.");[] 
+ []
+
+
+
+[23]
+Overfull \hbox (37.38663pt too wide) in paragraph at lines 28--28
+ []        \T1/cmtt/m/n/12 ESP_LOGE("MAIN", "No se pudo asignar memoria para el buffer UART");[] 
+ []
+
+
+Overfull \hbox (105.29504pt too wide) in paragraph at lines 28--28
+ []    \T1/cmtt/m/n/12 ESP_LOGI("MAIN", "Formato: PULSOS <#pulsos> <frec> <dir>. Ej: PULSOS 200 1000 1");[] 
+ []
+
+
+Overfull \hbox (142.336pt too wide) in paragraph at lines 28--28
+ []        \T1/cmtt/m/n/12 int len = uart_read_bytes(UART_PORT, data, (BUF_SIZE - 1), 20 / portTICK_PERIOD_MS);[] 
+ []
+
+
+Overfull \hbox (129.98901pt too wide) in paragraph at lines 28--28
+ []            \T1/cmtt/m/n/12 //uart_write_bytes(UART_PORT, (const char *) data, len); // Eco de lo recibido[] 
+ []
+
+
+Overfull \hbox (18.86615pt too wide) in paragraph at lines 28--28
+ []            \T1/cmtt/m/n/12 if (cmd_token != NULL && strcmp(cmd_token, "PULSOS") == 0) {[] 
+ []
+
+
+Overfull \hbox (105.29504pt too wide) in paragraph at lines 28--28
+ []                \T1/cmtt/m/n/12 if (pulses_token != NULL && freq_token != NULL && dir_token != NULL) {[] 
+ []
+
+
+Overfull \hbox (167.02997pt too wide) in paragraph at lines 28--28
+ []                    \T1/cmtt/m/n/12 if (num_pulses > 0 && frequency > 0 && (direction == 0 || direction == 1)) {[] 
+ []
+
+
+Overfull \hbox (12.69266pt too wide) in paragraph at lines 28--28
+ []                        \T1/cmtt/m/n/12 stepper_move(num_pulses, frequency, direction);[] 
+ []
+
+
+Overfull \hbox (389.2757pt too wide) in paragraph at lines 28--28
+ []                        \T1/cmtt/m/n/12 uart_write_bytes(UART_PORT, "Error: Argumentos inválidos.\r\n", strlen("Error: Argumentos inválidos.\r\n"));[] 
+ []
+
+
+Overfull \hbox (809.07318pt too wide) in paragraph at lines 28--28
+ []                    \T1/cmtt/m/n/12 uart_write_bytes(UART_PORT, "Error: Faltan argumentos. Formato: PULSOS <#pulsos> <frec> <dir>\r\n", strlen("Error: Faltan argumentos. Formato: PULSOS <#pulsos> <frec> <dir>\r\n"));[] 
+ []
+
+
+Overfull \hbox (247.28537pt too wide) in paragraph at lines 28--28
+ []                 \T1/cmtt/m/n/12 uart_write_bytes(UART_PORT, "Comando desconocido.\r\n", strlen("Comando desconocido.\r\n"));[] 
+ []
+
+
 
 [24]
-Overfull \hbox (8.01193pt too wide) in paragraph at lines 23--23
-[]        \T1/cmtt/m/n/12 ESP_LOGE("MAIN", "No se pudo asignar memoria para el buffer UART");[] 
- []
+<04-figuras/placaB.jpg, id=421, 1284.8pt x 964.60374pt>
+File: 04-figuras/placaB.jpg Graphic file (type jpg)
+<use 04-figuras/placaB.jpg>
+Package pdftex.def Info: 04-figuras/placaB.jpg  used on input line 35.
+(pdftex.def)             Requested size: 189.47694pt x 142.26378pt.
+<04-figuras/placaF.jpg, id=422, 1284.8pt x 964.60374pt>
+File: 04-figuras/placaF.jpg Graphic file (type jpg)
+<use 04-figuras/placaF.jpg>
+Package pdftex.def Info: 04-figuras/placaF.jpg  used on input line 42.
+(pdftex.def)             Requested size: 189.47694pt x 142.26378pt.
+<04-figuras/diagrama_conexion_control_bb.png, id=423, 1282.92633pt x 687.368pt>
+File: 04-figuras/diagrama_conexion_control_bb.png Graphic file (type png)
+<use 04-figuras/diagrama_conexion_control_bb.png>
+Package pdftex.def Info: 04-figuras/diagrama_conexion_control_bb.png  used on input line 51.
+(pdftex.def)             Requested size: 455.0pt x 243.78136pt.
+)
 
+[25 <./04-figuras/placaB.jpg> <./04-figuras/placaF.jpg>]
 
-Overfull \hbox (75.92035pt too wide) in paragraph at lines 23--23
-[]    \T1/cmtt/m/n/12 ESP_LOGI("MAIN", "Formato: PULSOS <#pulsos> <frec> <dir>. Ej: PULSOS 200 1000 1");[] 
- []
-
-
-Overfull \hbox (112.9613pt too wide) in paragraph at lines 23--23
-[]        \T1/cmtt/m/n/12 int len = uart_read_bytes(UART_PORT, data, (BUF_SIZE - 1), 20 / portTICK_PERIOD_MS);[] 
- []
-
-
-Overfull \hbox (100.61432pt too wide) in paragraph at lines 23--23
-[]            \T1/cmtt/m/n/12 //uart_write_bytes(UART_PORT, (const char *) data, len); // Eco de lo recibido[] 
- []
-
-
-Overfull \hbox (75.92035pt too wide) in paragraph at lines 23--23
-[]                \T1/cmtt/m/n/12 if (pulses_token != NULL && freq_token != NULL && dir_token != NULL) {[] 
- []
-
-
-Overfull \hbox (137.65527pt too wide) in paragraph at lines 23--23
-[]                    \T1/cmtt/m/n/12 if (num_pulses > 0 && frequency > 0 && (direction == 0 || direction == 1)) {[] 
- []
-
-
-Overfull \hbox (359.901pt too wide) in paragraph at lines 23--23
-[]                        \T1/cmtt/m/n/12 uart_write_bytes(UART_PORT, "Error: Argumentos inválidos.\r\n", strlen("Error: Argumentos inválidos.\r\n"));[] 
- []
-
-
-Overfull \hbox (779.69849pt too wide) in paragraph at lines 23--23
-[]                    \T1/cmtt/m/n/12 uart_write_bytes(UART_PORT, "Error: Faltan argumentos. Formato: PULSOS <#pulsos> <frec> <dir>\r\n", strlen("Error: Faltan argumentos. Formato: PULSOS <#pulsos> <frec> <dir>\r\n"));[] 
- []
-
-
-Overfull \hbox (217.91068pt too wide) in paragraph at lines 23--23
-[]                 \T1/cmtt/m/n/12 uart_write_bytes(UART_PORT, "Comando desconocido.\r\n", strlen("Comando desconocido.\r\n"));[] 
- []
-
-
-
-[25])
-
-[26]
+[26 <./04-figuras/diagrama_conexion_control_bb.png>]
 \openout2 = `./02-elementos-textuais/cap6-conclusion.aux'.
 
  (02-elementos-textuais/cap6-conclusion.tex
@@ -1422,13 +1469,13 @@ Underfull \hbox (badness 1082) in paragraph at lines 36--40
 AP\^ENDICE A.
 File: "07-CÃ³digos/encoder.h"  (verbatim)
 
-Overfull \hbox (162.34924pt too wide) in paragraph at lines 13--13
-[]    \T1/cmtt/m/n/12 gpio_num_t pin_z;             // Pin GPIO para la Fase Z (índice), usar GPIO_NUM_NC si no se usa[] 
+Overfull \hbox (191.72394pt too wide) in paragraph at lines 16--16
+ []    \T1/cmtt/m/n/12 gpio_num_t pin_z;             // Pin GPIO para la Fase Z (índice), usar GPIO_NUM_NC si no se usa[] 
  []
 
 
-Overfull \hbox (32.7059pt too wide) in paragraph at lines 13--13
-[]    \T1/cmtt/m/n/12 uint16_t pulses_per_rev;    // Pulsos por revolución del encoder (ej. 1024)[] 
+Overfull \hbox (62.0806pt too wide) in paragraph at lines 16--16
+ []    \T1/cmtt/m/n/12 uint16_t pulses_per_rev;    // Pulsos por revolución del encoder (ej. 1024)[] 
  []
 
 
@@ -1436,28 +1483,33 @@ Overfull \hbox (32.7059pt too wide) in paragraph at lines 13--13
 [30
 
 ]
-Overfull \hbox (131.48178pt too wide) in paragraph at lines 13--13
-[] \T1/cmtt/m/n/12 * @brief Comprueba si se ha detectado un pulso de índice (Z) desde la última vez que se llamó.[] 
+Overfull \hbox (160.85648pt too wide) in paragraph at lines 16--16
+ [] \T1/cmtt/m/n/12 * @brief Comprueba si se ha detectado un pulso de índice (Z) desde la última vez que se llamó.[] 
  []
 
 File: "07-CÃ³digos/encoder.c"  (verbatim)
 
 
 [31]
+Overfull \hbox (18.86615pt too wide) in paragraph at lines 19--19
+ []    \T1/cmtt/m/n/12 g_degrees_per_count = 360.0f / (float)(g_config.pulses_per_rev * 4);[] 
+ []
+
+
 
 [32]
-Overfull \hbox (20.35892pt too wide) in paragraph at lines 14--14
-[]    \T1/cmtt/m/n/12 // Configurar la interrupción Z solo si se ha proporcionado un pin válido[] 
+Overfull \hbox (49.73361pt too wide) in paragraph at lines 19--19
+ []    \T1/cmtt/m/n/12 // Configurar la interrupción Z solo si se ha proporcionado un pin válido[] 
  []
 
 
-Overfull \hbox (1.83844pt too wide) in paragraph at lines 14--14
-[]        \T1/cmtt/m/n/12 gpio_isr_handler_add(g_config.pin_z, encoder_z_isr_handler, NULL);[] 
+Overfull \hbox (31.21313pt too wide) in paragraph at lines 19--19
+ []        \T1/cmtt/m/n/12 gpio_isr_handler_add(g_config.pin_z, encoder_z_isr_handler, NULL);[] 
  []
 
 
-Overfull \hbox (14.18542pt too wide) in paragraph at lines 14--14
-[]    \T1/cmtt/m/n/12 ESP_LOGI(TAG, "Librería Encoder inicializada en pines A:%d, B:%d, Z:%d",[] 
+Overfull \hbox (43.56012pt too wide) in paragraph at lines 19--19
+ []    \T1/cmtt/m/n/12 ESP_LOGI(TAG, "Librería Encoder inicializada en pines A:%d, B:%d, Z:%d",[] 
  []
 
 
@@ -1465,85 +1517,105 @@ Overfull \hbox (14.18542pt too wide) in paragraph at lines 14--14
 [33]
 File: "07-CÃ³digos/stepperMotor.h"  (verbatim)
 
-Overfull \hbox (14.18542pt too wide) in paragraph at lines 18--18
-[] \T1/cmtt/m/n/12 * El usuario debe rellenar esta estructura con los pines que va a utilizar.[] 
+Overfull \hbox (18.86615pt too wide) in paragraph at lines 28--28
+ [] \T1/cmtt/m/n/12 * @brief Estructura de configuración para inicializar el motor a pasos.[] 
  []
 
 
-Overfull \hbox (51.22638pt too wide) in paragraph at lines 18--18
-[] \T1/cmtt/m/n/12 * Configura los periféricos de hardware (LEDC/MCPWM) y los pines GPIO necesarios.[] 
+Overfull \hbox (43.56012pt too wide) in paragraph at lines 28--28
+ [] \T1/cmtt/m/n/12 * El usuario debe rellenar esta estructura con los pines que va a utilizar.[] 
  []
 
 
-Overfull \hbox (38.8794pt too wide) in paragraph at lines 18--18
-[] \T1/cmtt/m/n/12 * Debe ser llamada una sola vez antes de cualquier otra función de la librería.[] 
+Overfull \hbox (80.60107pt too wide) in paragraph at lines 28--28
+ [] \T1/cmtt/m/n/12 * Configura los periféricos de hardware (LEDC/MCPWM) y los pines GPIO necesarios.[] 
  []
 
 
-Overfull \hbox (57.39987pt too wide) in paragraph at lines 18--18
-[] \T1/cmtt/m/n/12 * @param config Puntero a la estructura de configuración con los pines a utilizar.[] 
+Overfull \hbox (68.25409pt too wide) in paragraph at lines 28--28
+ [] \T1/cmtt/m/n/12 * Debe ser llamada una sola vez antes de cualquier otra función de la librería.[] 
  []
 
 
-Overfull \hbox (57.39987pt too wide) in paragraph at lines 18--18
-[] \T1/cmtt/m/n/12 * @return esp_err_t ESP_OK si la inicialización fue exitosa, o un código de error.[] 
+Overfull \hbox (86.77457pt too wide) in paragraph at lines 28--28
+ [] \T1/cmtt/m/n/12 * @param config Puntero a la estructura de configuración con los pines a utilizar.[] 
  []
 
 
-Overfull \hbox (14.18542pt too wide) in paragraph at lines 18--18
-[] \T1/cmtt/m/n/12 * @brief Mueve el motor un número específico de pasos a una velocidad dada.[] 
+Overfull \hbox (86.77457pt too wide) in paragraph at lines 28--28
+ [] \T1/cmtt/m/n/12 * @return esp_err_t ESP_OK si la inicialización fue exitosa, o un código de error.[] 
  []
 
 
 
 [34]
-Overfull \hbox (1.83844pt too wide) in paragraph at lines 18--18
-[] \T1/cmtt/m/n/12 * Esta es una función bloqueante. La ejecución no continuará hasta que el[] 
+Overfull \hbox (43.56012pt too wide) in paragraph at lines 28--28
+ [] \T1/cmtt/m/n/12 * @brief Mueve el motor un número específico de pasos a una velocidad dada.[] 
  []
 
 
-Overfull \hbox (14.18542pt too wide) in paragraph at lines 18--18
-[] \T1/cmtt/m/n/12 * @param speed_hz La velocidad del movimiento en Hertz (pasos por segundo).[] 
+Overfull \hbox (31.21313pt too wide) in paragraph at lines 28--28
+ [] \T1/cmtt/m/n/12 * Esta es una función bloqueante. La ejecución no continuará hasta que el[] 
+ []
+
+
+Overfull \hbox (43.56012pt too wide) in paragraph at lines 28--28
+ [] \T1/cmtt/m/n/12 * @param speed_hz La velocidad del movimiento en Hertz (pasos por segundo).[] 
  []
 
 File: "07-CÃ³digos/stepperMotor.c"  (verbatim)
 
-Overfull \hbox (32.7059pt too wide) in paragraph at lines 19--19
-[]\T1/cmtt/m/n/12 static stepper_config_t motor_config; // Variable global para guardar los pines[] 
+Overfull \hbox (12.69266pt too wide) in paragraph at lines 31--31
+ []\T1/cmtt/m/n/12 #define LEDC_DUTY_RES   LEDC_TIMER_1_BIT // Óptimo para alta frecuencia[] 
  []
 
 
-Overfull \hbox (242.60464pt too wide) in paragraph at lines 19--19
-[]    \T1/cmtt/m/n/12 ESP_LOGI(TAG, "Inicializando motor en STEP pin %d, DIR pin %d", motor_config.step_pin, motor_config.dir_pin);[] 
+Overfull \hbox (62.0806pt too wide) in paragraph at lines 31--31
+ []\T1/cmtt/m/n/12 static stepper_config_t motor_config; // Variable global para guardar los pines[] 
  []
 
 
 
 [35]
-Overfull \hbox (112.9613pt too wide) in paragraph at lines 19--19
-[]        \T1/cmtt/m/n/12 ESP_LOGE(TAG, "Fallo al configurar el temporizador LEDC: %s", esp_err_to_name(err));[] 
+Overfull \hbox (271.97934pt too wide) in paragraph at lines 31--31
+ []    \T1/cmtt/m/n/12 ESP_LOGI(TAG, "Inicializando motor en STEP pin %d, DIR pin %d", motor_config.step_pin, motor_config.dir_pin);[] 
  []
 
 
-Overfull \hbox (69.74686pt too wide) in paragraph at lines 19--19
-[]        \T1/cmtt/m/n/12 ESP_LOGE(TAG, "Fallo al configurar el canal LEDC: %s", esp_err_to_name(err));[] 
+Overfull \hbox (142.336pt too wide) in paragraph at lines 31--31
+ []        \T1/cmtt/m/n/12 ESP_LOGE(TAG, "Fallo al configurar el temporizador LEDC: %s", esp_err_to_name(err));[] 
  []
 
 
-Overfull \hbox (106.78781pt too wide) in paragraph at lines 19--19
-[]        \T1/cmtt/m/n/12 ESP_LOGE(TAG, "Fallo al configurar el pin de dirección: %s", esp_err_to_name(err));[] 
+Overfull \hbox (99.12155pt too wide) in paragraph at lines 31--31
+ []        \T1/cmtt/m/n/12 ESP_LOGE(TAG, "Fallo al configurar el canal LEDC: %s", esp_err_to_name(err));[] 
  []
 
 
 
 [36]
-Overfull \hbox (57.39987pt too wide) in paragraph at lines 19--19
-[]    \T1/cmtt/m/n/12 esp_rom_delay_us(10); // Pequeña espera para que el driver asiente la dirección[] 
+Overfull \hbox (136.1625pt too wide) in paragraph at lines 31--31
+ []        \T1/cmtt/m/n/12 ESP_LOGE(TAG, "Fallo al configurar el pin de dirección: %s", esp_err_to_name(err));[] 
  []
 
 
-Overfull \hbox (180.86972pt too wide) in paragraph at lines 19--19
-[]        \T1/cmtt/m/n/12 ESP_LOGE(TAG, "Fallo al establecer la frecuencia a %d Hz: %s", speed_hz, esp_err_to_name(err));[] 
+Overfull \hbox (18.86615pt too wide) in paragraph at lines 31--31
+ []    \T1/cmtt/m/n/12 ESP_LOGI(TAG, "Librería Stepper Motor inicializada correctamente.");[] 
+ []
+
+
+Overfull \hbox (86.77457pt too wide) in paragraph at lines 31--31
+ []    \T1/cmtt/m/n/12 esp_rom_delay_us(10); // Pequeña espera para que el driver asiente la dirección[] 
+ []
+
+
+Overfull \hbox (210.24442pt too wide) in paragraph at lines 31--31
+ []        \T1/cmtt/m/n/12 ESP_LOGE(TAG, "Fallo al establecer la frecuencia a %d Hz: %s", speed_hz, esp_err_to_name(err));[] 
+ []
+
+
+Overfull \hbox (18.86615pt too wide) in paragraph at lines 31--31
+ []    \T1/cmtt/m/n/12 if (duration_ms == 0) duration_ms = 1; // Mover al menos por un tick[] 
  []
 
 
@@ -1609,14 +1681,60 @@ Underfull \hbox (badness 1178) in paragraph at lines 33--34
 
 ]
 ANEXO B.
-<04-figuras/esp32 pinout.jpg, id=460, 803.0pt x 578.16pt>
-File: 04-figuras/esp32 pinout.jpg Graphic file (type jpg)
-<use 04-figuras/esp32 pinout.jpg>
-Package pdftex.def Info: 04-figuras/esp32 pinout.jpg  used on input line 19.
-(pdftex.def)             Requested size: 197.58829pt x 142.26378pt.
-)
+<04-figuras/driver tabla especif electric.png, id=502, 784.43062pt x 233.37187pt>
+File: 04-figuras/driver tabla especif electric.png Graphic file (type png)
+<use 04-figuras/driver tabla especif electric.png>
+Package pdftex.def Info: 04-figuras/driver tabla especif electric.png  used on input line 20.
+(pdftex.def)             Requested size: 455.0pt x 135.36646pt.
+<04-figuras/driver tabla configuracion dinamica corriente.png, id=503, 781.41937pt x 240.9pt>
+File: 04-figuras/driver tabla configuracion dinamica corriente.png Graphic file (type png)
+<use 04-figuras/driver tabla configuracion dinamica corriente.png>
+Package pdftex.def Info: 04-figuras/driver tabla configuracion dinamica corriente.png  used on input line 27.
+(pdftex.def)             Requested size: 455.0pt x 140.26979pt.
+<04-figuras/driver tabla microstep resolucion.png, id=504, 785.18344pt x 469.00218pt>
+File: 04-figuras/driver tabla microstep resolucion.png Graphic file (type png)
+<use 04-figuras/driver tabla microstep resolucion.png>
+Package pdftex.def Info: 04-figuras/driver tabla microstep resolucion.png  used on input line 34.
+(pdftex.def)             Requested size: 455.0pt x 271.7853pt.
+
 
 [41
+
+ <./04-figuras/driver tabla especif electric.png> <./04-figuras/driver tabla configuracion dinamica corriente.png>]
+
+[42 <./04-figuras/driver tabla microstep resolucion.png>]
+ANEXO C.
+<04-figuras/encoder tabla conecciones.png, id=517, 670.00313pt x 285.31593pt>
+File: 04-figuras/encoder tabla conecciones.png Graphic file (type png)
+<use 04-figuras/encoder tabla conecciones.png>
+Package pdftex.def Info: 04-figuras/encoder tabla conecciones.png  used on input line 43.
+(pdftex.def)             Requested size: 455.0pt x 193.7554pt.
+<04-figuras/encoder tabla espec electricas.png, id=518, 618.05907pt x 416.30531pt>
+File: 04-figuras/encoder tabla espec electricas.png Graphic file (type png)
+<use 04-figuras/encoder tabla espec electricas.png>
+Package pdftex.def Info: 04-figuras/encoder tabla espec electricas.png  used on input line 50.
+(pdftex.def)             Requested size: 455.0pt x 306.48573pt.
+<04-figuras/encoder tabla espec mecanicas.png, id=519, 618.81187pt x 172.39406pt>
+File: 04-figuras/encoder tabla espec mecanicas.png Graphic file (type png)
+<use 04-figuras/encoder tabla espec mecanicas.png>
+Package pdftex.def Info: 04-figuras/encoder tabla espec mecanicas.png  used on input line 57.
+(pdftex.def)             Requested size: 455.0pt x 126.76202pt.
+
+
+[43
+
+ <./04-figuras/encoder tabla conecciones.png> <./04-figuras/encoder tabla espec electricas.png>]
+
+[44 <./04-figuras/encoder tabla espec mecanicas.png>]
+ANEXO D.
+<04-figuras/esp32 pinout.jpg, id=531, 803.0pt x 578.16pt>
+File: 04-figuras/esp32 pinout.jpg Graphic file (type jpg)
+<use 04-figuras/esp32 pinout.jpg>
+Package pdftex.def Info: 04-figuras/esp32 pinout.jpg  used on input line 67.
+(pdftex.def)             Requested size: 455.0pt x 327.60497pt.
+)
+
+[45
 
  <./04-figuras/esp32 pinout.jpg>]
 \tf@lof=\write4
@@ -1635,19 +1753,23 @@ enddocument/afterlastpage (AED): lastpage setting LastPage.
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 21910 strings out of 468079
- 371908 string characters out of 5435811
- 842014 words of memory out of 5000000
- 49994 multiletter control sequences out of 15000+600000
+ 22022 strings out of 468079
+ 375636 string characters out of 5435811
+ 843042 words of memory out of 5000000
+ 50086 multiletter control sequences out of 15000+600000
  648743 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,15n,121p,907b,767s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1728.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1440.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1095.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\Main.pdf (48 pages, 6367423 bytes).
+ 113i,15n,121p,907b,884s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1728.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1440.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1095.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on c:\Users\Ricardo\Documents\Pasantias-2025\informe\INF_PAS\build\Main.pdf (52 pages, 7157457 bytes).
 PDF statistics:
- 1336 PDF objects out of 1440 (max. 8388607)
- 140 named destinations out of 1000 (max. 500000)
- 498 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1445 PDF objects out of 1728 (max. 8388607)
+ 160 named destinations out of 1000 (max. 500000)
+ 591 words of extra memory for PDF output out of 10000 (max. 10000000)
 
