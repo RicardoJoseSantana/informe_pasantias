@@ -160,6 +160,32 @@
         \end{figure}
 
         El convertidor de voltaje DC-DC Step-Down 3A LM2596 tiene como función entregar un voltaje de salida constante inferior al voltaje de entrada frente a variaciones del voltaje de entrada o de carga. Soporta corrientes de salida de hasta 3A, voltaje de entrada entre 4.5V a 40V y voltaje de salida entre 1.23V a 37V. El voltaje de salida se selecciona mediante un potenciómetro multivuelta.
+
+\section{Software utilizado.}
+
+    Para el desarrollo del proyecto se utilizaron las siguientes herramientas de software:
+
+    \begin{itemize}
+        \item \textbf{PlatformIO en VSCode:} Entorno de desarrollo integrado (IDE) basado en Visual Studio Code, que facilita la programación y gestión de proyectos para microcontroladores, incluyendo el ESP32. Proporciona una amplia gama de bibliotecas y herramientas para la compilación, carga y depuración del código.
+        
+        \begin{figure}[H]
+            \centering
+            \includegraphics[height=5cm]{04-figuras/platformio-interfaz.png}
+            \caption{Interfaz de PlatformIO en VSCode.}
+            \label{fig:platformio-interfaz}
+        \end{figure}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[height=5cm]{04-figuras/platformio-config.png}
+            \caption{Configuración de PlatformIO en VSCode.}
+            \label{fig:platformio-config}
+        \end{figure}
+
+        \item \textbf{Librerías de Espressif:} Se emplearon diversas librerías específicas para facilitar la comunicación con el hardware, como la librería para manejar los pulsos del encoder rotatorio PCNT y la librería LiquidCrystal\_I2C para controlar la pantalla LCD a través del adaptador I2C.
+        \item \textbf{Software de diseño PCB (KiCad):} Empleado para diseñar el esquema eléctrico y la placa de circuito impreso (PCB) del módulo basado en ESP32.
+        \item \textbf{Google AI Studio:} Inteligencia artificial utilizada para sugerencias y correcciones de código durante el desarrollo del firmware. 
+    \end{itemize}
     
 \section{Implementación de Encoder}
 
@@ -245,7 +271,7 @@
             \label{fig:base-conexion-esp-driver}
         \end{figure}
 
-        Por otra parte también se indican las señales necesarias para establecer el control (fig \ref{})
+        Por otra parte también se indican las señales necesarias para establecer el control (fig \ref{fig:base-driver-senales})
 
         \begin{figure}[H]
             \centering
@@ -284,9 +310,9 @@
         donde:
 
         \begin{itemize}
-            \item $f_{pulsos}$:
-            \item $f_{motor}$:
-            \item $PPR$:
+            \item $f_{pulsos}$: frecuancia de los pulsos enviados por el terminal PUL
+            \item $f_{motor}$: frecuencia de revoluciones del motor (RPM/60)
+            \item $PPR$: pulsos por revolución del motor (dependiendo del engranaje y microstepping)
         \end{itemize}
 
     \subsection{Frecuencia de pulsos: mínimos y máximos}
@@ -298,35 +324,26 @@
 
         Estos valores son orientativos: la velocidad segura depende de la carga, el par requerido y las limitaciones térmicas del motor y driver. Ajuste la corriente del DM542T con los dip switches al valor nominal del motor y emplee microstepping según la necesidad de resolución/torque.
 
-    \subsection{Generación de pulsos desde el ESP32}
+    Observaciones recomendadas:
 
-        Para frecuencias altas (>> 10 kHz) es recomendable usar periféricos de hardware del ESP32 para generar el tren de pulsos:
-
-        - RMT (Remote Control) o PWM/hardware timer para generar pulsos en hardware, evitando la pérdida de pulsos por bloqueo en el scheduler.
-        - Evitar usar delays software largos o loops con digitalWrite a altas frecuencias (riesgo de jitter y pérdida).
-
-        En el control de una vuelta el algoritmo básico es:
-
-        1. Configurar GPIO DIR al nivel deseado.
-        2. Habilitar ENA (si se usa).
-        3. Generar N = Pulsesperrev pulsos en PUL con la frecuencia deseada.
-        4. Deshabilitar ENA (opcional).
-
-    \subsection{Prueba de una vuelta — procedimiento y observaciones}
-
-        Procedimiento realizado:
-
-        1. Configurar el DM542T a 1/16 microstepping y corriente adecuada para el motor.
-        2. Conectar PUL a un pin del ESP32 capaz de salida PWM/RMT y DIR a un GPIO digital.
-        3. Generar 3200 pulsos a 10 kHz y verificar que el eje completa una revolución.
-        4. Repetir a 50 kHz y observar comportamiento; finalmente probar en el rango hasta 200 kHz para verificar respuesta.
-
-        Observaciones recomendadas:
-
-        - Verificar que la corriente de ajuste del driver sea la adecuada (evitar sobrecalentamiento).
-        - Observar vibraciones a microsteppings bajos y calor del motor a altas frecuencias.
-        - Si se experimenta pérdida de pasos, reducir la velocidad, aumentar corriente o mejorar la aceleración (rampado) de la secuencia de pulsos.
+    \begin{itemize}
+        \item Verificar que la corriente de ajuste del driver sea la adecuada (evitar sobrecalentamiento).
+        \item Observar vibraciones a microsteppings bajos y calor del motor a altas frecuencias.
+        \item Si se experimenta pérdida de pasos, reducir la velocidad, aumentar corriente o mejorar la aceleración (rampado) de la secuencia de pulsos.
+    \end{itemize}
 
 \section{fabricación de módulo de trabajo (basado en esp32)}
 
-\section{Ejemplo práctico: Péndulo invertido}        
+    \begin{figure}[H]
+        \centering
+        \includegraphics[height=5cm]{04-figuras/kicad-esquematico.png}
+        \caption{Diagrama esquemático del módulo de trabajo.}
+        \label{fig:kicad-esquematico}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[height=5cm]{04-figuras/kicad-placa.jpg}
+        \caption{Layout del módulo de trabajo.}
+        \label{fig:kicad-placa}
+    \end{figure}

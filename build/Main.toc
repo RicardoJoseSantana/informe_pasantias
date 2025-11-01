@@ -21,36 +21,34 @@
 \contentsline {subsection}{\numberline {5.1.5}Pantalla LCD WH1602B 16 carácteres x 2 líneas.}{12}{subsection.5.1.5}%
 \contentsline {subsection}{\numberline {5.1.6}Adaptador I2C para pantalla LCD.}{13}{subsection.5.1.6}%
 \contentsline {subsection}{\numberline {5.1.7}Convertidor DC DC Arduino basado en LM2596.}{13}{subsection.5.1.7}%
-\contentsline {section}{\numberline {5.2}Implementación de Encoder}{14}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Caracterización y conexión del encoder}{14}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Montaje y señal observada}{14}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Integración con ESP32: lectura y salida de datos}{15}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Implementación del driver y motor}{16}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Caracterización del driver}{16}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Conexiones y consideraciones de señal}{17}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Cálculo de pulsos por revolución y configuración de microstepping}{18}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}Frecuencia de pulsos: mínimos y máximos}{18}{subsection.5.3.4}%
-\contentsline {subsection}{\numberline {5.3.5}Generación de pulsos desde el ESP32}{18}{subsection.5.3.5}%
-\contentsline {subsection}{\numberline {5.3.6}Prueba de una vuelta — procedimiento y observaciones}{19}{subsection.5.3.6}%
-\contentsline {section}{\numberline {5.4}fabricación de módulo de trabajo (basado en esp32)}{19}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Ejemplo práctico: Péndulo invertido}{19}{section.5.5}%
-\contentsline {chapter}{\chapternumberline {6}Resultados}{20}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Encoder}{20}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Motor}{22}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Modulo de trabajo}{25}{section.6.3}%
-\contentsline {section}{\numberline {6.4}diagrama de conexiones aplicación.}{26}{section.6.4}%
-\contentsline {chapter}{\chapternumberline {7}Conclusión}{27}{chapter.7}%
+\contentsline {section}{\numberline {5.2}Software utilizado.}{14}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Implementación de Encoder}{15}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Caracterización y conexión del encoder}{15}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Montaje y señal observada}{15}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Integración con ESP32: lectura y salida de datos}{16}{subsection.5.3.3}%
+\contentsline {section}{\numberline {5.4}Implementación del driver y motor}{17}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Caracterización del driver}{17}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Conexiones y consideraciones de señal}{18}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Cálculo de pulsos por revolución y configuración de microstepping}{19}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Frecuencia de pulsos: mínimos y máximos}{19}{subsection.5.4.4}%
+\contentsline {section}{\numberline {5.5}fabricación de módulo de trabajo (basado en esp32)}{20}{section.5.5}%
+\contentsline {chapter}{\chapternumberline {6}Resultados}{21}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Encoder}{21}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Motor}{23}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Modulo de trabajo}{26}{section.6.3}%
+\contentsline {section}{\numberline {6.4}diagrama de conexiones aplicación.}{27}{section.6.4}%
+\contentsline {chapter}{\chapternumberline {7}Conclusión}{28}{chapter.7}%
 \vspace {\cftbeforepartskip }
-\contentsline {chapter}{Referencias}{28}{chapter*.31}%
+\contentsline {chapter}{Referencias}{29}{chapter*.35}%
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
-\contentsline {part}{Ap\^endices}{29}{section*.32}%
-\contentsline {appendix}{\chapternumberline {A}Códigos}{30}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Códigos libreria encoder}{30}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Códigos libreria stepperMotor}{34}{section.A.2}%
+\contentsline {part}{Ap\^endices}{30}{section*.36}%
+\contentsline {appendix}{\chapternumberline {A}Códigos}{31}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Códigos libreria encoder}{31}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Códigos libreria stepperMotor}{35}{section.A.2}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
-\contentsline {part}{Anexos}{39}{section*.33}%
-\contentsline {appendix}{\chapternumberline {A}Información sobre Motor de paso 23HS22-2804S}{40}{appendix.anexochapback.1}%
-\contentsline {appendix}{\chapternumberline {B}Información sobre Digital Stepper Driver DM542T}{41}{appendix.anexochapback.2}%
-\contentsline {appendix}{\chapternumberline {C}Información sobre encoder}{43}{appendix.anexochapback.3}%
-\contentsline {appendix}{\chapternumberline {D}Información sobre el ESP32-WROOM-32}{45}{appendix.anexochapback.4}%
+\contentsline {part}{Anexos}{40}{section*.37}%
+\contentsline {appendix}{\chapternumberline {A}Información sobre Motor de paso 23HS22-2804S}{41}{appendix.anexochapback.1}%
+\contentsline {appendix}{\chapternumberline {B}Información sobre Digital Stepper Driver DM542T}{42}{appendix.anexochapback.2}%
+\contentsline {appendix}{\chapternumberline {C}Información sobre encoder}{44}{appendix.anexochapback.3}%
+\contentsline {appendix}{\chapternumberline {D}Información sobre el ESP32-WROOM-32}{46}{appendix.anexochapback.4}%

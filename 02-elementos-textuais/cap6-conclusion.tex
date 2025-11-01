@@ -2,5 +2,10 @@
 % Documento: Conclusão
 \chapter{Conclusión}\label{chap:conclusion}
 
-Conclusion.
+Se lograron realizar librerías basadas en Espressif IDF que pueden ser implementadas en módulos del esp32 como el esp32-wroom-32, esp32-wroom-32D y el esp32-s3-wroom-1. Estas mismas pueden manejar, a través del driver DM542T, motores paso a paso de 2 y 4 fases que no sobrepasen una corriente de 4.5A pico; cabe destacar que existe un límite máximo y mínimo de RPM del motor según la configuración de interruptores DIP que se le asigne al driver.Además, gracias a la librería encoder es posible obtener los grados efectivos del mismo para la aplicación que se necesite.
 
+Debido a las diversas aplicaciones de los motores a paso es posible que estas librerías sean utilizadas en proyectos de robótica, CNC, impresoras 3D, entre otros. A pesar de esto faltó desarrollar considerablemente la aplicación de control en lazo cerrado para un sistema compuesto de péndulo invertido, el cual se dejó como trabajo futuro.
+
+Por otra parte, el módulo desarrollado aunque funcional y estable, puede ser optimizado en cuanto a la gestión de memoria y el consumo energético, ya que el mismo no fue un foco principal durante el desarrollo del proyecto; e incluso relacionarlo a aplicaciones IoT.
+
+Gracias al trabajo realizado, se logró adquirir experiencia en el desarrollo de software embebido para microcontroladores de la familia ESP32, así como en la implementación de controladores para motores paso a paso y la integración de interfaces de usuario mediante pantallas LCD y consolas serie. Esto permitió fortalecer habilidades en programación concurrente utilizando tareas y en el diseño de sistemas modulares y escalables.

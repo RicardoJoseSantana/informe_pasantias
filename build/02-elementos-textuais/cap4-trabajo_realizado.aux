@@ -30,52 +30,58 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.5}Pantalla LCD WH1602B 16 carácteres x 2 líneas.}{12}{subsection.5.1.5}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Pantalla LCD.}}{12}{figure.caption.12}\protected@file@percent }
 \newlabel{fig:pantalla-lcd}{{5}{12}{Pantalla LCD}{figure.caption.12}{}}
-\citation{omron}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.6}Adaptador I2C para pantalla LCD.}{13}{subsection.5.1.6}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Adaptador I2C.}}{13}{figure.caption.13}\protected@file@percent }
 \newlabel{fig:adaptador-i2c}{{6}{13}{Adaptador I2C}{figure.caption.13}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.7}Convertidor DC DC Arduino basado en LM2596.}{13}{subsection.5.1.7}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces convertidor LM2596.}}{13}{figure.caption.14}\protected@file@percent }
 \newlabel{fig:convertidor-dcdc}{{7}{13}{convertidor LM2596}{figure.caption.14}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Implementación de Encoder}{14}{section.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Caracterización y conexión del encoder}{14}{subsection.5.2.1}\protected@file@percent }
-\newlabel{sec:encoder-caracterizacion}{{5.2.1}{14}{Caracterización y conexión del encoder}{subsection.5.2.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Circuito de salida del encoder (basado en hoja de datos E6B2-CWZ6C). Los pines: marrón = Vcc (5–24 V), azul = GND, negro = fase A, blanco = fase B, naranja = fase Z.}}{14}{figure.caption.15}\protected@file@percent }
-\newlabel{fig:encoder-out-interno}{{8}{14}{Circuito de salida del encoder (basado en hoja de datos E6B2-CWZ6C). Los pines: marrón = Vcc (5–24 V), azul = GND, negro = fase A, blanco = fase B, naranja = fase Z}{figure.caption.15}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Señales esperadas en las fases A, B y Z (timing y desfase) por salida de colector abierto.}}{14}{figure.caption.16}\protected@file@percent }
-\newlabel{fig:encoder-out-senal}{{9}{14}{Señales esperadas en las fases A, B y Z (timing y desfase) por salida de colector abierto}{figure.caption.16}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Montaje y señal observada}{14}{subsection.5.2.2}\protected@file@percent }
-\newlabel{sec:encoder-montaje}{{5.2.2}{14}{Montaje y señal observada}{subsection.5.2.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Montaje de prueba del encoder: conexiones a la fuente de 5 V y sondas de osciloscopio en A y B.}}{15}{figure.caption.17}\protected@file@percent }
-\newlabel{fig:encoder-prueba}{{10}{15}{Montaje de prueba del encoder: conexiones a la fuente de 5 V y sondas de osciloscopio en A y B}{figure.caption.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Señal observada en prueba: canales A y B en cuadratura.}}{15}{figure.caption.18}\protected@file@percent }
-\newlabel{fig:encoder-prueba-senal}{{11}{15}{Señal observada en prueba: canales A y B en cuadratura}{figure.caption.18}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Integración con ESP32: lectura y salida de datos}{15}{subsection.5.2.3}\protected@file@percent }
-\newlabel{sec:encoder-esp32}{{5.2.3}{15}{Integración con ESP32: lectura y salida de datos}{subsection.5.2.3}{}}
+\citation{omron}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Software utilizado.}{14}{section.5.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Interfaz de PlatformIO en VSCode.}}{14}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:platformio-interfaz}{{8}{14}{Interfaz de PlatformIO en VSCode}{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Configuración de PlatformIO en VSCode.}}{14}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:platformio-config}{{9}{14}{Configuración de PlatformIO en VSCode}{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Implementación de Encoder}{15}{section.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Caracterización y conexión del encoder}{15}{subsection.5.3.1}\protected@file@percent }
+\newlabel{sec:encoder-caracterizacion}{{5.3.1}{15}{Caracterización y conexión del encoder}{subsection.5.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Circuito de salida del encoder (basado en hoja de datos E6B2-CWZ6C). Los pines: marrón = Vcc (5–24 V), azul = GND, negro = fase A, blanco = fase B, naranja = fase Z.}}{15}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:encoder-out-interno}{{10}{15}{Circuito de salida del encoder (basado en hoja de datos E6B2-CWZ6C). Los pines: marrón = Vcc (5–24 V), azul = GND, negro = fase A, blanco = fase B, naranja = fase Z}{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Señales esperadas en las fases A, B y Z (timing y desfase) por salida de colector abierto.}}{15}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:encoder-out-senal}{{11}{15}{Señales esperadas en las fases A, B y Z (timing y desfase) por salida de colector abierto}{figure.caption.18}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Montaje y señal observada}{15}{subsection.5.3.2}\protected@file@percent }
+\newlabel{sec:encoder-montaje}{{5.3.2}{15}{Montaje y señal observada}{subsection.5.3.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Montaje de prueba del encoder: conexiones a la fuente de 5 V y sondas de osciloscopio en A y B.}}{16}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:encoder-prueba}{{12}{16}{Montaje de prueba del encoder: conexiones a la fuente de 5 V y sondas de osciloscopio en A y B}{figure.caption.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Señal observada en prueba: canales A y B en cuadratura.}}{16}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:encoder-prueba-senal}{{13}{16}{Señal observada en prueba: canales A y B en cuadratura}{figure.caption.20}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Integración con ESP32: lectura y salida de datos}{16}{subsection.5.3.3}\protected@file@percent }
+\newlabel{sec:encoder-esp32}{{5.3.3}{16}{Integración con ESP32: lectura y salida de datos}{subsection.5.3.3}{}}
 \citation{steeperonline}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Montaje físico del encoder conectado al ESP32 durante las pruebas de integración.}}{16}{figure.caption.19}\protected@file@percent }
-\newlabel{fig:encoder-esp}{{12}{16}{Montaje físico del encoder conectado al ESP32 durante las pruebas de integración}{figure.caption.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Captura de la salida serial o terminal del ESP32 mostrando conteo de pulsos, dirección y detección de Z.}}{16}{figure.caption.20}\protected@file@percent }
-\newlabel{fig:encoder-codeserial}{{13}{16}{Captura de la salida serial o terminal del ESP32 mostrando conteo de pulsos, dirección y detección de Z}{figure.caption.20}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Implementación del driver y motor}{16}{section.5.3}\protected@file@percent }
-\newlabel{sec:driver-motor}{{5.3}{16}{Implementación del driver y motor}{section.5.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Caracterización del driver}{16}{subsection.5.3.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Conexiones a señal de colector abierto}}{17}{figure.caption.21}\protected@file@percent }
-\newlabel{fig:base-conexion-esp-driver}{{14}{17}{Conexiones a señal de colector abierto}{figure.caption.21}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Secuencia característica de señales de control.}}{17}{figure.caption.22}\protected@file@percent }
-\newlabel{fig:base-driver-senales}{{15}{17}{Secuencia característica de señales de control}{figure.caption.22}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Conexiones y consideraciones de señal}{17}{subsection.5.3.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Diagrama de conexiones driver y motor, en conjunto con el ESP32.}}{18}{figure.caption.23}\protected@file@percent }
-\newlabel{fig:montaje-conexiones-motor}{{16}{18}{Diagrama de conexiones driver y motor, en conjunto con el ESP32}{figure.caption.23}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Cálculo de pulsos por revolución y configuración de microstepping}{18}{subsection.5.3.3}\protected@file@percent }
-\newlabel{eq:PUL}{{1}{18}{Cálculo de pulsos por revolución y configuración de microstepping}{equation.5.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.4}Frecuencia de pulsos: mínimos y máximos}{18}{subsection.5.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.5}Generación de pulsos desde el ESP32}{18}{subsection.5.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.6}Prueba de una vuelta — procedimiento y observaciones}{19}{subsection.5.3.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}fabricación de módulo de trabajo (basado en esp32)}{19}{section.5.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.5}Ejemplo práctico: Péndulo invertido}{19}{section.5.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Montaje físico del encoder conectado al ESP32 durante las pruebas de integración.}}{17}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:encoder-esp}{{14}{17}{Montaje físico del encoder conectado al ESP32 durante las pruebas de integración}{figure.caption.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Captura de la salida serial o terminal del ESP32 mostrando conteo de pulsos, dirección y detección de Z.}}{17}{figure.caption.22}\protected@file@percent }
+\newlabel{fig:encoder-codeserial}{{15}{17}{Captura de la salida serial o terminal del ESP32 mostrando conteo de pulsos, dirección y detección de Z}{figure.caption.22}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Implementación del driver y motor}{17}{section.5.4}\protected@file@percent }
+\newlabel{sec:driver-motor}{{5.4}{17}{Implementación del driver y motor}{section.5.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Caracterización del driver}{17}{subsection.5.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Conexiones a señal de colector abierto}}{18}{figure.caption.23}\protected@file@percent }
+\newlabel{fig:base-conexion-esp-driver}{{16}{18}{Conexiones a señal de colector abierto}{figure.caption.23}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Secuencia característica de señales de control.}}{18}{figure.caption.24}\protected@file@percent }
+\newlabel{fig:base-driver-senales}{{17}{18}{Secuencia característica de señales de control}{figure.caption.24}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Conexiones y consideraciones de señal}{18}{subsection.5.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Diagrama de conexiones driver y motor, en conjunto con el ESP32.}}{19}{figure.caption.25}\protected@file@percent }
+\newlabel{fig:montaje-conexiones-motor}{{18}{19}{Diagrama de conexiones driver y motor, en conjunto con el ESP32}{figure.caption.25}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.3}Cálculo de pulsos por revolución y configuración de microstepping}{19}{subsection.5.4.3}\protected@file@percent }
+\newlabel{eq:PUL}{{1}{19}{Cálculo de pulsos por revolución y configuración de microstepping}{equation.5.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.4}Frecuencia de pulsos: mínimos y máximos}{19}{subsection.5.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}fabricación de módulo de trabajo (basado en esp32)}{20}{section.5.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Diagrama esquemático del módulo de trabajo.}}{20}{figure.caption.26}\protected@file@percent }
+\newlabel{fig:kicad-esquematico}{{19}{20}{Diagrama esquemático del módulo de trabajo}{figure.caption.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Layout del módulo de trabajo.}}{20}{figure.caption.27}\protected@file@percent }
+\newlabel{fig:kicad-placa}{{20}{20}{Layout del módulo de trabajo}{figure.caption.27}{}}
 \@setckpt{./02-elementos-textuais/cap4-trabajo_realizado}{
-\setcounter{page}{20}
+\setcounter{page}{21}
 \setcounter{equation}{1}
 \setcounter{enumi}{8}
 \setcounter{enumii}{0}
@@ -123,10 +129,10 @@
 \setcounter{cmsm@mctr}{0}
 \setcounter{bsm@mctr}{0}
 \setcounter{workm@mctr}{0}
-\setcounter{sheetsequence}{27}
-\setcounter{lastsheet}{52}
-\setcounter{lastpage}{45}
-\setcounter{figure}{16}
+\setcounter{sheetsequence}{28}
+\setcounter{lastsheet}{53}
+\setcounter{lastpage}{46}
+\setcounter{figure}{20}
 \setcounter{lofdepth}{1}
 \setcounter{table}{2}
 \setcounter{lotdepth}{1}
