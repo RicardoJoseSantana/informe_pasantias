@@ -31,6 +31,16 @@ Osaka, Japan, 1992. Documento de Especificaciones Técnicas. Cat. No.
   Q085-E1-1C. Código de impresión (1092). Dispon{\'\i}vel em:
   \url{https://docs.rs-online.com/35ca/0900766b80383981.pdf}.}
 
+\bibitem[Santana Ricardo y~Rivero 2025]{Santana2025GitHub}
+\abntrefinfo{Santana Ricardo y~Rivero}{Santana Ricardo y~Rivero}{2025}
+{SANTANA RICARDO Y~RIVERO, A. \textbf{Control pendulo}. 2025. Repositorio de
+  C\'odigo Fuente del Proyecto de Pasant\'ias. GitHub:
+  \texttt{RicardoJoseSantana/control-pendulo}.
+Contiene el c\'odigo fuente del firmware (Lenguajes principales: C 93.1\%,
+  Python 5.8\%) [3-5].
+Dispon{\'\i}vel em:
+  \url{https://github.com/RicardoJoseSantana/control-pendulo}.}
+
 \bibitem[STEPPERONLINE 2020]{steeperonline}
 \abntrefinfo{STEPPERONLINE}{STEPPERONLINE}{2020}
 {STEPPERONLINE. \textbf{User Manual DM542T(V4.0) 2-Phase Digital Stepper

@@ -57,45 +57,45 @@ Warning--campo year vazio ou faltando em WinstarLCD
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 14 entries,
+You've used 15 entries,
             6714 wiz_defined-function locations,
-            1259 strings with 11570 characters,
-and the built_in function-call counts, 11343 in all, are:
-= -- 1464
-> -- 4
-< -- 305
-+ -- 354
-- -- 3
-* -- 550
-:= -- 1211
-add.period$ -- 28
-call.type$ -- 18
-change.case$ -- 59
-chr.to.int$ -- 22
-cite$ -- 8
-duplicate$ -- 1108
-empty$ -- 762
-format.name$ -- 0
-if$ -- 2522
+            1266 strings with 11909 characters,
+and the built_in function-call counts, 13012 in all, are:
+= -- 1680
+> -- 19
+< -- 359
++ -- 413
+- -- 8
+* -- 642
+:= -- 1413
+add.period$ -- 34
+call.type$ -- 19
+change.case$ -- 66
+chr.to.int$ -- 23
+cite$ -- 9
+duplicate$ -- 1303
+empty$ -- 821
+format.name$ -- 23
+if$ -- 2841
 int.to.chr$ -- 7
 int.to.str$ -- 3
-missing$ -- 174
-newline$ -- 38
-num.names$ -- 0
-pop$ -- 158
+missing$ -- 192
+newline$ -- 44
+num.names$ -- 5
+pop$ -- 180
 preamble$ -- 1
-purify$ -- 42
+purify$ -- 45
 quote$ -- 0
-skip$ -- 1540
+skip$ -- 1733
 stack$ -- 1
-substring$ -- 481
-swap$ -- 362
-text.length$ -- 5
+substring$ -- 557
+swap$ -- 429
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 11
+while$ -- 18
 width$ -- 0
-write$ -- 100
+write$ -- 116
 (There were 3 warnings)
